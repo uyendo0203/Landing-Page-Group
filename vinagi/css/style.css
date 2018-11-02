@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header .navbar-custom {
+    height: 90px;
+    padding: 0 63px;
+    margin: 0;
+    /*background: #99aab4;*/
+}
+.header .header__logo {
+    height: auto;
+    padding: 18px 15px;
+}
+@media(max-width: 1200px){
+    .header .header__logo {
+        width: 140px;
+    }
+}
+
+@media(max-width: 1200px){
+    .header .header__logo img {
+        width: 100%;
+    }
+}
+.header .header__banner {
+    width: 100%;
+}
+.header .navbar-nav li {
+    margin: 0 20px;
+}
+
+@media(max-width: 1200px){
+    .header .navbar-nav li {
+        margin: 0 10px;
+    }
+}
+.header .navbar-nav li a {
+    padding: 0;
+    line-height: 90px;
+    color: #fff;
+}
+.header .navbar-nav li a:hover {
+    background: transparent;
+    /*border-bottom: 2px solid #fff;*/
+}
+.header__banner .header__banner-slider .slick-arrow {
+    z-index: 9;
+}
+.header__banner .header__banner-slider .slick-next {
+    right: 10px;
+}
+.header__banner .header__banner-slider .slick-prev {
+    left: 10px;
+}
+.header__banner .header__banner-slider .slick-next:before {
+    font-family: FontAwesome;
+    content: '\f105';
+    font-size: 60px;
+}
+.header__banner .header__banner-slider .slick-prev:before {
+    font-family: FontAwesome;
+    content: '\f104';
+    font-size: 60px;
+}
+.header__banner .header__banner-slider .slick-slide img {
+    width: 100%;
+}
+
+.search-box .search {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: -35px;
+    width: 500px;
+    z-index: 1;
+}
+
+.search-box:hover .search {
+    display: block;
+    z-index: 700;
+}
+.search-box .search .input-lg {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    font-size: 13px;
+    color: #333;
+    margin: 0;
+    display: inline-block;
+    height: 50px;
+    padding-right: 90px;
+    background: #fff;
+}
+.search-box .search .button_search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+}
+.search-box .search .btn-lg {
+    padding: 0 35px;
+    height: 50px;
+    background: none!important;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 123;
+}
+.banner-adv{
+    padding: 0 75px;
+    margin-top: 18px;
+    
+}
+
+@media(max-width: 480px){
+    .banner-adv{
+        padding: 0 30px;
+    }
+}
+
+.banner-adv .slick-slide{
+    outline: none;
+}
+.banner-adv .slick-slide img{
+    margin:0 auto;
+    cursor: pointer;
+    outline: none;
+}

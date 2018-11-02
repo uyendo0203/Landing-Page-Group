@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"> -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/doStyles.css">
+</head>
+<body>
+     <!-- header -->
+    <section class="header">
+        <div class="row">
+            <nav class="navbar navbar-custom navbar-fixed-top hidden-xs hidden-sm">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#toggle-menu" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="header__logo navbar-brand  hidden-xs hidden-sm" href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="navbar-right hidden-xs hidden-sm">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <div class="search-box">
+                            <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
+                            <form>
+                                <div class="input-group search">
+                                    <input type="text" name="q" value="" placeholder="Tìm kiếm sản phẩm" class="form-control input-lg">
+                                    <span class="button_search">
+                                        <button type="submit" class="btn btn-default btn-lg"><i class="fa fa-search"></i></button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li><a class="nav-link" href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse hidden-xs hidden-sm" id="toggle-menu">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a class="nav-link" href="#">TRANG CHỦ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a class="nav-link" href="#">GIỚI THIỆU</a></li>
+                    <li><a class="nav-link" href="#">DỊCH VỤ</a></li>
+                    <li><a class="nav-link" href="#">CATALOGUE</a></li>
+                    <li><a class="nav-link" href="tintuc.html">TIN TỨC</a></li>
+                    <li><a class="nav-link" href="#">DỰ ÁN</a></li>
+                    <li><a class="nav-link" href="#">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+
+        <!-- menu mobile -->
+        <div class="mobile visible-xs visible-sm m-b-150-mobile">
+            <div class="do_custom_mobile">
+                <div class="header_top  hidden-sm hidden-xs">
+                    <div class="iconSearch_Cart">
+                        <a class="nav-link icon_cart_mobile" href="cart.html">
+                            <span class="num_product">3</span><i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                    
+                        
+                </div>
+                <div class="header_mobile">
+                    <a class=" " href="index.html">
+                        <img  class="logo" src="images/logo.png" alt="">
+                    </a>
+
+                    <a>
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </a>
+
+                </div>
+
+           
+                <div class="menu_mobile">
+                    <ul class="menu_ul">
+                        <li>
+                            <div class="nk-search-box ">
+                                <input type="text" name="q" value="" id="search_input" placeholder="Tìm kiếm sản phẩm" autocomplete="off">
+                                <!-- <button><i class="fa fa-search"></i></button> -->
+                                <!-- <div class="nk-search-hint">
+                                    <div class="search-result" style="/* display: none; */">
+                                        <ul class="nk-search-cate">
+                                            <li></li>
+                                        </ul>
+                                        <ul class="nk-search-product-item">
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div> -->
+                                <button type="submit"><i class="fa fa-search icon_search_mobile"></i></button>
+                            </div>   
+                        </li>
+                        <li class="active"><a class="nav-link" href="index.html">TRANG CHỦ</a></li>
+                        <li><a class="nav-link" href="#">GIỎ HÀNG (3)</a></li>
+                        <li><a class="nav-link" href="#">GIỚI THIỆU</a></li>
+                        <li><a class="nav-link" href="#">DỊCH VỤ</a></li>
+                        <li><a class="nav-link" href="#">CATALOGUE</a></li>
+                        <li><a class="nav-link" href="tintuc.html">TIN TỨC</a></li>
+                        <li><a class="nav-link" href="#">DỰ ÁN</a></li>
+                        <li><a class="nav-link" href="#">LIÊN HỆ</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header__banner">
+            <div class="header__banner-slider">
+                <div><img src="images/bg-header.png" alt=""></div>
+                <div><img src="images/bg-header.png" alt=""></div>
+                <div><img src="images/bg-header.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="banner-adv">
+                <div class="banner-adv__slider">
+                    <div><img src="images/qc.png" alt=""></div>
+                    <div><img src="images/qc.png" alt=""></div>
+                    <div><img src="images/qc.png" alt=""></div>
+                    <div><img src="images/qc.png" alt=""></div>
+                    <div><img src="images/qc.png" alt=""></div>
+                    <div><img src="images/qc.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="main_content detail_page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="content.html">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Thông Tin Sản Phẩm</a>
+                        </li>
+                    </ul>
+                </div>
+            
+            </div>
+            <div class="row">
+                <div class="col-md-3 hidden-xs hidden-sm">
+                    <div class="content_sidebar">
+                        <div class="sidebar product_category">
+                            <div class="sidebar_title">
+                                <i class="fa fa-folder-open"></i>
+                                <a class="title">DANH MỤC SẢN PHẨM</a>
+                            </div>
+                            <div class="list_category">
+                                <ul>
+                                    <li><a href="#">Dây & cáp điện</a></li>
+                                    <li><a href="">Thiết bị điện dân dụng</a></li>
+                                    <li><a href="">Thiết bị bảo vệ điện</a></li>
+                                    <li><a href="">Thiết bị phòng nổ</a></li>
+                                    <li><a href="">Ghen nhựa & Phụ kiện</a></li>
+                                    <li><a href="">Thiết bị chiếu sáng</a></li>
+                                    <li><a href="">Tủ điện & Thang cáp</a></li>
+                                    <li><a href="">Thiết bị gia dụng</a></li>
+                                    <li><a href="">Ổn áp & Lưu điện</a></li>
+                                    <li><a href="">Smart House</a></li>
+                                    <li><a href="">Vật tư phụ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content_sidebar">
+                        <div class="sidebar">
+                            <div class="sidebar_title">
+                                <i class="fa fa-phone"></i>
+                                <a class="title">HỖ TRỢ TRỰC TUYẾN</a>
+                            </div>
+                            <div class="support_items">
+                                <div class="item">
+                                    <p class="name">Mr Vuong</p>
+                                    <p class="phone">
+                                        <a>0902655838</a><span><img src="./images/skype.ico"></span>
+                                    </p>
+                                    <p class="email">Email: vuong.nvpxc@gmail.com</p>
+                                </div>
+                                <div class="item">
+                                    <p class="name">Mr Vuong</p>
+                                    <p class="phone">
+                                        <a>0902655838</a><span><img src="./images/skype.ico"></span>
+                                    </p>
+                                    <p class="email">Email: vuong.nvpxc@gmail.com</p>
+                                </div>
+                                <div class="item">
+                                    <p class="name">Mr Vuong</p>
+                                    <p class="phone">
+                                        <a>0902655838</a><span><img src="./images/skype.ico"></span>
+                                    </p>
+                                    <p class="email">Email: vuong.nvpxc@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content_sidebar">
+                        <div class="sidebar">
+                            <div class="sidebar_title">
+                                <i class="fa fa-trophy"></i>
+                                <a class="title">SẢN PHẨM NỔI BẬT</a>
+                            </div>
+                            <div class="product_highlights">
+                                <div class="product_item_2">
+                                    <div class="item_images">
+                                        <a href="#">
+                                            <img src="./images/cap3.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item_detail">
+                                        <a href="#">
+                                            <p class="title">
+                                                Cáp hàn cao su CNR 1x16mm2 - Goldcup
+                                            </p>
+                                            <p class="code">Mã SP: CNR-1x16</p>
+                                            <div class="price">
+                                                <p class="price_current">
+                                                    34.908 VNĐ
+                                                </p>
+                                                <p class="price_discount">
+                                                    46.544 VNĐ
+                                                </p>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="overBg">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+
+                                <div class="product_item_2">
+                                    <div class="item_images">
+                                        <a href="#">
+                                            <img src="./images/cap2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item_detail">
+                                        <a href="#">
+                                            <p class="title">
+                                                Cáp hàn cao su CNR 1x16mm2 - Goldcup
+                                            </p>
+                                            <p class="code">Mã SP: CNR-1x16</p>
+                                            <div class="price">
+                                                <p class="price_current">
+                                                    34.908 VNĐ
+                                                </p>
+                                                <p class="price_discount">
+                                                    46.544 VNĐ
+                                                </p>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="overBg">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content_sidebar">
+                        <div class="sidebar">
+                            <div class="sidebar_title news">
+                                <i class="far fa-newspaper"></i>
+                                <a class="title">TIN TỨC NỔI BẬT</a>
+                            </div>
+                            <div class="news_highlights">
+                                <div class="item">
+                                    <a href="#">
+                                        <span class="images"><img src="./images/news1.jpg"></span>
+                                        <p class="title">Hướng dẫn cách chọn mua đèn âm trần</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <span class="images"><img src="./images/news2.jpg"></span>
+                                        <p class="title">Một số tiêu chuẩn chiếu sáng cần biết</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <span class="images"><img src="./images/news3.jpg"></span>
+                                        <p class="title">Đèn tuyp Led hãng nào tốt nhất?</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-9 col-sm-12 detai_page">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="single-product-image">
+                                <div class="single-pro-main-image">
+                                    <a href="http://thegioidenxinh.com/assets/images/news/2016/01/25/044110IPSMD0IP50/03b0db7b2702e8e432e24090ff55dfa4.JPG">
+                                        <div class="zoomWrapper"><img id="optima_zoom" src="http://thegioidenxinh.com/assets/images/news/2016/01/25/044110IPSMD0IP50/03b0db7b2702e8e432e24090ff55dfa4_570x570.JPG" >
+                                        </div>
+                                    </a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="single-product-description">
+                                <div class="pro-desc">
+                                    <h2>Đèn Thà Hiện Đại TS1135/3</h2>
+
+                                    <ul class="list-unstyled pd-price">
+                                        <li><span class="price-old">1.290.000 VNĐ</span></li>
+                                        <li> <span class="price-new">890.000 VNĐ</span> </li>
+
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>Dòng sản phẩm: <span class="span">HÀNG KHUYẾN MÃI</span></li>
+
+                                    </ul>
+                                </div>
+                                <!--  <div class="pro-desc">-->
+                            </div>
+                            <div id="product">
+                                <div class="option-box">
+                                    <h3>Tùy chọn đang có</h3>
+                                    <div class="form-group required image-option">
+
+
+                                    </div>
+                                </div>
+
+                                <div class="buy-box">
+                                    <div class="product_details_cart">
+                                        <div class="product-quantity">
+                                            <div class="numbers-row">
+                                                <form id="frmAddCart800" name="frmAddCart800" method="post" action="http://thegioidenxinh.com/vn/cart/add">
+                                                    <input type="hidden" name="bv_id" value="800">
+                                                    <input type="hidden" name="mau_sac" id="mau_sac_800" value="">
+                                                    <input type="hidden" name="kich_thuoc" id="kich_thuoc_800" value="">
+                                                    <input type="text" name="so_luong" value="1" id="input-quantity">
+                                                </form>
+                                                <div class="dec qtybutton">-</div>
+                                                <div class="inc qtybutton">+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="button-cart">
+                                        <button type="button" id="button-cart" data-loading-text="Đang Xử lý..." class="push_button button shopng-btn"> <i class="fa fa-shopping-cart"></i>Thêm vào giỏ</button>
+
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Nav tabs -->
+                            <div class="card">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">MÔ TẢ</a></li>
+                                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">HÌNH ẢNH</a></li>
+                                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">BÌNH LUẬN</a></li>
+                                    
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="home">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                                        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                    <div role="tabpanel" class="tab-pane" id="profile">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book.</div>
+                                    <div role="tabpanel" class="tab-pane" id="messages">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                                        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="text_related title"><span>Sản phẩm liên quan</span></h3>
+                            <div class="detailPage__banner">
+                                <div class="detailPage__banner-slider">
+                                    <div class="product_item">
+                                        <div class="item_images">
+                                            <a href="#">
+                                                <img src="https://media3.scdn.vn/img2/2017/10_1/qTCL0R_simg_b5529c_250x250_maxb.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="item_detail">
+                                            <a href="#">
+                                                <p class="title">
+                                                    Cáp hàn cao su CNR 1x16mm2 - Goldcup
+                                                </p>
+                                                <p class="code">Mã SP: CNR-1x16</p>
+                                                <div class="price">
+                                                    <p class="price_current">
+                                                        34.908 VNĐ
+                                                    </p>
+                                                    <p class="price_discount">
+                                                        46.544 VNĐ
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="overBg">
+                                            <i class="fa fa-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                <div class="product_item">
+                                        <div class="item_images">
+                                            <a href="#">
+                                                <img src="https://media3.scdn.vn/img2/2017/10_1/qTCL0R_simg_b5529c_250x250_maxb.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="item_detail">
+                                            <a href="#">
+                                                <p class="title">
+                                                    Cáp hàn cao su CNR 1x16mm2 - Goldcup
+                                                </p>
+                                                <p class="code">Mã SP: CNR-1x16</p>
+                                                <div class="price">
+                                                    <p class="price_current">
+                                                        34.908 VNĐ
+                                                    </p>
+                                                    <p class="price_discount">
+                                                        46.544 VNĐ
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="overBg">
+                                            <i class="fa fa-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                <div class="product_item">
+                                        <div class="item_images">
+                                            <a href="#">
+                                                <img src="https://media3.scdn.vn/img2/2017/10_1/qTCL0R_simg_b5529c_250x250_maxb.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="item_detail">
+                                            <a href="#">
+                                                <p class="title">
+                                                    Cáp hàn cao su CNR 1x16mm2 - Goldcup
+                                                </p>
+                                                <p class="code">Mã SP: CNR-1x16</p>
+                                                <div class="price">
+                                                    <p class="price_current">
+                                                        34.908 VNĐ
+                                                    </p>
+                                                    <p class="price_discount">
+                                                        46.544 VNĐ
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="overBg">
+                                            <i class="fa fa-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                <div class="product_item">
+                                        <div class="item_images">
+                                            <a href="#">
+                                                <img src="https://media3.scdn.vn/img2/2017/10_1/qTCL0R_simg_b5529c_250x250_maxb.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="item_detail">
+                                            <a href="#">
+                                                <p class="title">
+                                                    Cáp hàn cao su CNR 1x16mm2 - Goldcup
+                                                </p>
+                                                <p class="code">Mã SP: CNR-1x16</p>
+                                                <div class="price">
+                                                    <p class="price_current">
+                                                        34.908 VNĐ
+                                                    </p>
+                                                    <p class="price_discount">
+                                                        46.544 VNĐ
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="overBg">
+                                            <i class="fa fa-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                <div class="product_item">
+                                        <div class="item_images">
+                                            <a href="#">
+                                                <img src="https://media3.scdn.vn/img2/2017/10_1/qTCL0R_simg_b5529c_250x250_maxb.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="item_detail">
+                                            <a href="#">
+                                                <p class="title">
+                                                    Cáp hàn cao su CNR 1x16mm2 - Goldcup
+                                                </p>
+                                                <p class="code">Mã SP: CNR-1x16</p>
+                                                <div class="price">
+                                                    <p class="price_current">
+                                                        34.908 VNĐ
+                                                    </p>
+                                                    <p class="price_discount">
+                                                        46.544 VNĐ
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="overBg">
+                                            <i class="fa fa-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                <div class="product_item">
+                                        <div class="item_images">
+                                            <a href="#">
+                                                <img src="https://media3.scdn.vn/img2/2017/10_1/qTCL0R_simg_b5529c_250x250_maxb.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="item_detail">
+                                            <a href="#">
+                                                <p class="title">
+                                                    Cáp hàn cao su CNR 1x16mm2 - Goldcup
+                                                </p>
+                                                <p class="code">Mã SP: CNR-1x16</p>
+                                                <div class="price">
+                                                    <p class="price_current">
+                                                        34.908 VNĐ
+                                                    </p>
+                                                    <p class="price_discount">
+                                                        46.544 VNĐ
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="overBg">
+                                            <i class="fa fa-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                <div class="product_item">
+                                        <div class="item_images">
+                                            <a href="#">
+                                                <img src="https://media3.scdn.vn/img2/2017/10_1/qTCL0R_simg_b5529c_250x250_maxb.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="item_detail">
+                                            <a href="#">
+                                                <p class="title">
+                                                    Cáp hàn cao su CNR 1x16mm2 - Goldcup
+                                                </p>
+                                                <p class="code">Mã SP: CNR-1x16</p>
+                                                <div class="price">
+                                                    <p class="price_current">
+                                                        34.908 VNĐ
+                                                    </p>
+                                                    <p class="price_discount">
+                                                        46.544 VNĐ
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="overBg">
+                                            <i class="fa fa-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                <div class="product_item">
+                                        <div class="item_images">
+                                            <a href="#">
+                                                <img src="https://media3.scdn.vn/img2/2017/10_1/qTCL0R_simg_b5529c_250x250_maxb.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="item_detail">
+                                            <a href="#">
+                                                <p class="title">
+                                                    Cáp hàn cao su CNR 1x16mm2 - Goldcup
+                                                </p>
+                                                <p class="code">Mã SP: CNR-1x16</p>
+                                                <div class="price">
+                                                    <p class="price_current">
+                                                        34.908 VNĐ
+                                                    </p>
+                                                    <p class="price_discount">
+                                                        46.544 VNĐ
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="overBg">
+                                            <i class="fa fa-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                <div class="product_item">
+                                        <div class="item_images">
+                                            <a href="#">
+                                                <img src="https://media3.scdn.vn/img2/2017/10_1/qTCL0R_simg_b5529c_250x250_maxb.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="item_detail">
+                                            <a href="#">
+                                                <p class="title">
+                                                    Cáp hàn cao su CNR 1x16mm2 - Goldcup
+                                                </p>
+                                                <p class="code">Mã SP: CNR-1x16</p>
+                                                <div class="price">
+                                                    <p class="price_current">
+                                                        34.908 VNĐ
+                                                    </p>
+                                                    <p class="price_discount">
+                                                        46.544 VNĐ
+                                                    </p>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="overBg">
+                                            <i class="fa fa-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--section menu sidebar left for mobile-->
+    <a href="#" class="sidebar-icon visible-sm visible-xs">
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+    </a>
+    <section class="visible-sm visible-xs">
+        <div class="sidebar_mobile">
+            <div class="header_sidebar">
+                <a href="#">
+                    <img src="./images/logo.png" alt="Logo"/>
+                </a>
+            </div>
+
+            <div class="sidebar_container scrollbar" id="style-1">
+                <div class="content_sidebar">
+                    <div class="sidebar product_category">
+                        <div class="sidebar_title">
+                            <i class="far fa-folder-open"></i>
+                            <a class="title">DANH MỤC SẢN PHẨM</a>
+                        </div>
+                        <div class="list_category">
+                            <ul>
+                                <li><a href="#">Dây & cáp điện</a></li>
+                                <li><a href="">Thiết bị điện dân dụng</a></li>
+                                <li><a href="">Thiết bị bảo vệ điện</a></li>
+                                <li><a href="">Thiết bị phòng nổ</a></li>
+                                <li><a href="">Ghen nhựa & Phụ kiện</a></li>
+                                <li><a href="">Thiết bị chiếu sáng</a></li>
+                                <li><a href="">Tủ điện & Thang cáp</a></li>
+                                <li><a href="">Thiết bị gia dụng</a></li>
+                                <li><a href="">Ổn áp & Lưu điện</a></li>
+                                <li><a href="">Smart House</a></li>
+                                <li><a href="">Vật tư phụ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content_sidebar">
+                    <div class="sidebar">
+                        <div class="sidebar_title">
+                            <i class="fa fa-phone"></i>
+                            <a class="title">HỖ TRỢ TRỰC TUYẾN</a>
+                        </div>
+                        <div class="support_items">
+                            <div class="item">
+                                <p class="name">Mr Vuong</p>
+                                <p class="phone">
+                                    <a>0902655838</a><span><img src="./images/skype.ico"></span>
+                                </p>
+                                <p class="email">Email: vuong.nvpxc@gmail.com</p>
+                            </div>
+                            <div class="item">
+                                <p class="name">Mr Vuong</p>
+                                <p class="phone">
+                                    <a>0902655838</a><span><img src="./images/skype.ico"></span>
+                                </p>
+                                <p class="email">Email: vuong.nvpxc@gmail.com</p>
+                            </div>
+                            <div class="item">
+                                <p class="name">Mr Vuong</p>
+                                <p class="phone">
+                                    <a>0902655838</a><span><img src="./images/skype.ico"></span>
+                                </p>
+                                <p class="email">Email: vuong.nvpxc@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="content_1">
+                
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="left">
+                            <div class="text_mail">
+                                ĐĂNG KÍ NHẬN BẢN TIN
+                            </div>
+                            <div class="input_mail">
+                                <form id="get-email">
+                                    <input id="newsletter_email2" type="text" class="email-enter" placeholder="Nhập email tại đây">
+                                    <button type="submit" class="sent-email">Gửi</button>
+                                </form>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="right">
+                            <div class="title1">THEO DÕI CHÚNG TÔI TRÊN MẠNG XÃ HỘI</div>
+                            <div class="icon">
+                                <a class="awe color-red"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a class="awe color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a class="awe color-red"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                                <a class="awe color-tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a class="awe color-red"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="title">THEO DÕI CHÚNG TÔI TRÊN MẠNG XÃ HỘI</div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="content_2">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="title col-1-style" style="text-transform: uppercase;">Gia Quoc Anh Trading and Construction</h4>
+                        <p>Website trực tuyến phân phối mảng sản phẩm thiết bị điện lớn nhất tại Việt Nam. Tự hào là nhà cung ứng vật tư điện hàng đầu cho các công trình trọng điểm trên cả nước. Tiên phong về giá, đi đầu về dịch vụ</p>
+                        <div class="awesome_style">
+                            <a><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            <a><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+                            <a><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+                        </div>
+                        <hr class=" visible-xs">
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <h3 class="title">Liên hệ</h3>
+                        <div class="content_address">
+                           
+                            <div class="item">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <a>347/23 Le Van Tho street, ward 9, Go Vap district, HCM</a>
+                            </div>
+                            <div class="item">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <a>028.22.67.97.97</a>
+                            </div>
+                            <div class="item">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <a>giaquocanh@gmail.com</a>
+                            </div>
+                            <div class="item">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <a>www.giaquocanh.com</a>
+                            </div>
+                        </div>
+                        <hr class="visible-xs">
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <h3 class="title">Chính sách và điều khoản</h3>
+                        <div class="term_condition">
+                            <ul>
+                                <li><a>Chính sách đổi trả hàng</a></li>
+                                <li><a>Chính sách bảo mật thông tin</a></li>
+                                <li><a>Chính sách vận chuyển</a></li>
+                                <li><a>Chính sách bảo hành sản phẩm</a></li>
+                            </ul>
+                            <div class="alert_img">
+                                <img src="./images/alert.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="content_3">
+                    <p>Bản quyền thuộc về Gia Quốc Anh - Thiết kế website bởi công ty 123CORP</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Script-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+</body>
+</html>
