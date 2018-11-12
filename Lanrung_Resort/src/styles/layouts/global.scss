@@ -1,0 +1,34 @@
+.contain-global{
+   
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 100%;
+   
+    
+   
+    @media (min-width: 768px) {
+        width: 750px;
+    }
+    @media (min-width: 992px) {
+        width: 970px;
+    }
+    @media (min-width: 1200px) {
+        width: 1170px;
+    }
+    @media (min-width: 1920px) {
+        width: 1320px;
+    }
+}
+.pc{
+    @media(max-width:768px){
+        display: none;
+    }
+}
+.mobile{
+    display: none;
+    @media(max-width:768px){
+        display: block;
+    }
+}
