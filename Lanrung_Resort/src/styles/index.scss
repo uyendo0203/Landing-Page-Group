@@ -1,16 +1,5 @@
-/*
-    IMPORT
-*/
-// @import "./import/**/*";
-/*
-    COMPONENTS
-*/
-// @import "./components/*";
-/*
-    LAYOUTS
-*/
- @import "./layouts/**/*";
-/*
-    ORGIN
-*/
-// @import "./origin/**/*";
+
+//components
+@import "./layouts/fonts";
+@import "./layouts/global";
+@import "./layouts/page";

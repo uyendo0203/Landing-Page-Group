@@ -90,7 +90,7 @@ $('.navbar-toggler').click(function (e) {
     }
 })
 
-$('body').click(function(e){
+$('body').click(function (e) {
     $('header').removeClass('active')
 })
 
@@ -125,17 +125,17 @@ $('.slider-nav').slick({
     focusOnSelect: true,
     arrows: false,
     responsive: [
-       
+
         {
-          breakpoint: 767,
-          settings: {
-            dots: false,
-          }
+            breakpoint: 767,
+            settings: {
+                dots: false,
+            }
         }
         // You can unslick at a given breakpoint now by adding:
         // settings: "unslick"
         // instead of a settings object
-      ]
+    ]
 });
 
 $('.slider-for-1').slick({
@@ -144,7 +144,7 @@ $('.slider-for-1').slick({
     arrows: false,
     fade: true,
     asNavFor: '.slider-nav-1',
-    
+
 });
 $('.slider-nav-1').slick({
     slidesToShow: 4,
@@ -155,21 +155,21 @@ $('.slider-nav-1').slick({
     focusOnSelect: true,
     arrows: false,
     responsive: [
-    {
-        breakpoint: 767,
-        settings: {
-            dots:false
-        }
+        {
+            breakpoint: 767,
+            settings: {
+                dots: false
+            }
         },
-  ]
+    ]
 });
 
 
-$('.section3 .list-images .n-item').click(function(){
+$('.section3 .list-images .n-item').click(function () {
     var data_images = $(this).attr('images-data');
     console.log(data_images);
 
     $(this).closest('.section').find('.images .i-item').removeClass('active')
-    $(this).closest('.section').find('.images .i-item'+'.'+data_images).addClass('active')
+    $(this).closest('.section').find('.images .i-item' + '.' + data_images).addClass('active')
 
 })
