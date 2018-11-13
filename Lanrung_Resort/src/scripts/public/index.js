@@ -163,6 +163,20 @@ $('.slider-nav-1').slick({
         },
     ]
 });
+$('.slider-2').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 767,
+            settings: {
+                dots: false
+            }
+        },
+    ]
+});
 
 
 $('.section3 .list-images .n-item').click(function () {
