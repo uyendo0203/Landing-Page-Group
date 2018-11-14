@@ -6,6 +6,19 @@ $(document).ready(function () {
 
     initSlider();
 
+    $('.navbar-toggler').click(function (e) {
+        e.stopPropagation();
+        if ($(this).closest('.lanrung').find('header').hasClass('active')) {
+            $(this).closest('.lanrung').find('header').removeClass('active')
+        }
+        else {
+            $(this).closest('.lanrung').find('header').addClass('active')
+        }
+    })
+    
+    $('body').click(function(e){
+        $('header').removeClass('active')
+    })
 
     $('header li a').click(function () {
         if ($(this).hasClass('active')) {
@@ -80,24 +93,8 @@ $(window).on('scroll', function () {
 });
 
 
-$('.navbar-toggler').click(function (e) {
-    e.stopPropagation();
-    if ($(this).closest('.vanphu').find('header').hasClass('active')) {
-        $(this).closest('.vanphu').find('header').removeClass('active')
-    }
-    else {
-        $(this).closest('.vanphu').find('header').addClass('active')
-    }
-})
 
-$('body').click(function (e) {
-    $('header').removeClass('active')
-})
-
-
-
-
-$('.vanphu .registration img').click(function (e) {
+$('.lanrung .registration img').click(function (e) {
     e.stopPropagation();
     if ($('.form').hasClass('active')) {
         $('.form').removeClass('active')

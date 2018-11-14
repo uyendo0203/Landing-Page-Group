@@ -1166,34 +1166,5 @@ body{
     }
     
 }
-@media(max-width:991px){
-    .vanphu header{
-        background-color: #007351;
-        height: auto;
-        color: #fff;
-        border: none;
-        padding-bottom: 20px;
-        padding-top: 10px;
-        // display: none;
-        transform: translateY(-100%);
-        transition: all 0.5s;
-        &.active{
-            // display: block;
-            top: 75px;
-            transform: translateY(0);
-        }
-    }
-    .vanphu header ul li a {
-        color: #fff;    max-width: 100%;
-        padding: 15px 0;
-    }
-    .vanphu header ul li {
-        display: block;
-    }
-    .vanphu header ul {
-        height: auto; 
-        transform: none;
-        text-align: right
-    }
-    
+ 
 }
