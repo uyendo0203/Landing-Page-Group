@@ -176,22 +176,12 @@ $('.slider-nav-1').slick({
     centerMode: false,
 });
  
-
-
-
-
-$('.section3 .list-images .n-item').click(function () {
-    var data_images = $(this).attr('images-data');
-    console.log(data_images);
-
-    $(this).closest('.section').find('.images .i-item').removeClass('active')
-    $(this).closest('.section').find('.images .i-item' + '.' + data_images).addClass('active')
-
-})
+var data_tab = 1;
+$('.section4 .tab'+'-'+data_tab).addClass('active')
 
 $('.section4 .tab li').click(function () {
-    var data_tab = $(this).attr('data-tab');
-    $('li').removeClass('active');
+    data_tab = $(this).attr('data-tab');
+    $('.section4 .tab li').removeClass('active');
 
     if($(this).hasClass('active')){
         $(this).removeClass('active');
@@ -221,7 +211,7 @@ $('.section4 .tab li').click(function () {
 
 $('.section5 .tab li').click(function () {
     var data_tab = $(this).attr('data-tab');
-    $('li').removeClass('active');
+    $('.section5 .tab li').removeClass('active');
 
     if($(this).hasClass('active')){
         $(this).removeClass('active');
