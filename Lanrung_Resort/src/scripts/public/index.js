@@ -163,20 +163,24 @@ $('.slider-nav-1').slick({
         },
     ]
 });
-$('.slider-2').slick({
+
+ $('.slider-2-1').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
     arrows: false,
-    responsive: [
-        {
-            breakpoint: 767,
-            settings: {
-                dots: false
-            }
-        },
-    ]
+    centerMode: false,
 });
+ $('.slider-3-1').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    centerMode: false,
+});
+ 
+
+
 
 
 $('.section3 .list-images .n-item').click(function () {
@@ -187,3 +191,62 @@ $('.section3 .list-images .n-item').click(function () {
     $(this).closest('.section').find('.images .i-item' + '.' + data_images).addClass('active')
 
 })
+
+$('.section4 .tab li').click(function () {
+    var data_tab = $(this).attr('data-tab');
+    $('li').removeClass('active');
+
+    if($(this).hasClass('active')){
+        $(this).removeClass('active');
+        $(this).closest('.content').find('.tab-content' + '-' + data_tab).removeClass('active')
+        $('.slider-2-1').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false,
+            centerMode: false,
+        });
+
+    }else{
+        $(this).addClass('active');
+        $(this).closest('.content').find('.tab-content').removeClass('active')
+        $(this).closest('.content').find('.tab-content' + '-' + data_tab).addClass('active')
+        $('.slider-2-2').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false,
+            centerMode: false,
+        });
+            
+    }
+})
+
+$('.section5 .tab li').click(function () {
+    var data_tab = $(this).attr('data-tab');
+    $('li').removeClass('active');
+
+    if($(this).hasClass('active')){
+        $(this).removeClass('active');
+        $(this).closest('.content').find('.tab-content' + '-' + data_tab).removeClass('active')
+        $('.slider-3-1').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false,
+            centerMode: false,
+        });
+    }else{
+        $(this).addClass('active');
+        $(this).closest('.content').find('.tab-content').removeClass('active')
+        $(this).closest('.content').find('.tab-content' + '-' + data_tab).addClass('active')
+        $('.slider-3-2').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false,
+            centerMode: false,
+        });
+    }
+})
+
