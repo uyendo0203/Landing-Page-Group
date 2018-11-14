@@ -157,6 +157,10 @@ body {
             left: 70px;
             bottom: 15px;
             right: 80px;
+            @media(max-width: 1400px) {
+                left: 25px;
+                right: 60px;
+            }
             @media(max-width: 991px) {
                 position: static;
                 padding: 20px;
@@ -164,7 +168,10 @@ body {
             color:#cbaf6e;
             text-align: center;
             .text-1 {
-                font-size: 28pt
+                font-size: 28pt;
+                @media(max-width: 1400px) {
+                    margin-bottom: -13px;
+                }
             }
             .text-2 {
                 span {
@@ -576,6 +583,9 @@ body {
                 @media(max-width: 1500px) {
                     max-width: 915px;
                 }
+                @media(max-width: 1400px) {
+                    max-width: 860px;
+                }
             }
             .tab {
                 padding-left: 0;
@@ -618,54 +628,106 @@ body {
             }
         }
     }
-    .footer {
+    .section6 {
         position: relative;
-        height: 340px;
-        overflow: hidden;
-        @media(max-width: 786px) {
-            height: 520px;
-        }
-        @media(max-width:500px) {
-            height: 550px;
+        @media(max-width: 900px) {
+            border:1px solid #ccc;
+            padding-bottom: 20px;
         }
         .images {
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-            @media(max-width: 786px) {
-                bottom: 0;
-                position: absolute;
-            }
             img {
                 width: 100%;
+            }
+        }
+        .title {
+            position: relative;
+            text-align: center;
+            .text {
+                font-size: 45pt;
+                color: #debd71
+            }
+            .line-text {}
+        }
+        .item {
+            .number {
+                font-family: 'SFUBelleRegular';
+                font-size: 77pt;
+                color: #debd71;
+                width: 100px;
+                float: left;
+            }
+            .text {
+                font-family: 'SFUShannonBook';
+                font-size: 18pt;
+                color: #debd71;
+                transform: translateY(55px);
             }
         }
         .content {
             position: absolute;
             bottom: 0;
-            left: 70px;
-            top: 150px;
-            right: 80px;
-            font-weight: bold;
+            left: 100px;
+            top: 140px;
+            right: 200px;
             @media(max-width: 1800px) {
-                top:100px;
+                top:140px;
             }
             @media(max-width:1500px) {
                 top: 140px;
+            }
+            @media(max-width:1400px) {
+                top: 105px;
             }
             @media screen and (max-width: 1026px) and (min-width: 1022px) {
                 top: 65px;
             }
             @media(max-width:991px) {
-                top: 75px;
+                top: 10px;
                 left: 20px;
                 right: 20px;
             }
-            @media(max-width:786px) {
-                top: 90px;
+            @media(max-width:900px) {
+                position: static;
+                margin-left: 20px;
+                margin-right: 20px;
             }
-            @media(max-width:768px) {
-                text-align: center
+        }
+        .footer {
+            color: #fff;
+            position: absolute;
+            bottom: 50px;
+            table {
+                position: relative;
+                width: 100%;
+                &:after {
+                    position: absolute;
+                    content: '';
+                    height: 145px;
+                    width: 2px;
+                    background-color: #fff;
+                    right: 0;
+                    top: 0
+                }
+                td {
+                    vertical-align: top;
+                    text-align: center;
+                    p {
+                        font-family: 'SFUShannonBook';
+                        font-size: 14pt;
+                    }
+                }
+                .left {}
+                .right {
+                    padding-right: 100px;
+                }
+            }
+            .address {
+                font-size: 14pt;
+                margin-left: 50px;
+                span {
+                    font-size: 17pt;
+                    font-family: 'SFUShannonBold'
+                }
             }
         }
     }
