@@ -88,7 +88,7 @@ $(window).on('scroll', function () {
 
 // slider------------------------------------
 function initSlider() {
-    $('.slider').slick({
+    $('.slider').not('.slick-initialized').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -99,14 +99,14 @@ function initSlider() {
 }
 
 
-$('.slider-for').slick({
+$('.slider-for').not('.slick-initialized').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
     asNavFor: '.slider-nav'
 });
-$('.slider-nav').slick({
+$('.slider-nav').not('.slick-initialized').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
@@ -125,7 +125,7 @@ $('.slider-nav').slick({
     ]
 });
 
-$('.slider-for-1').slick({
+$('.slider-for-1').not('.slick-initialized').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
@@ -133,7 +133,7 @@ $('.slider-for-1').slick({
     asNavFor: '.slider-nav-1',
 
 });
-$('.slider-nav-1').slick({
+$('.slider-nav-1').not('.slick-initialized').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.slider-for-1',
@@ -151,14 +151,14 @@ $('.slider-nav-1').slick({
     ]
 });
 
- $('.slider-2-1').slick({
+$('.slider-2-1').not('.slick-initialized').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
     arrows: false,
     centerMode: false,
 });
- $('.slider-3-1').slick({
+$('.slider-3-1').not('.slick-initialized').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
