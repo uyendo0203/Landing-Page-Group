@@ -179,7 +179,7 @@ $('.section4 .tab li').click(function () {
     if ($(this).hasClass('show-tab')){
         $(this).removeClass('show-tab');
         $(this).closest('.content').find('.tab-content' + '-' + data_tab).removeClass('show-tab')
-        $('.slider-2-1').slick({
+        $('.slider-2-1').not('.slick-initialized').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: true,
@@ -191,7 +191,7 @@ $('.section4 .tab li').click(function () {
         $(this).addClass('show-tab');
         $(this).closest('.content').find('.tab-content').removeClass('show-tab')
         $(this).closest('.content').find('.tab-content' + '-' + data_tab).addClass('show-tab')
-        $('.slider-2-2').slick({
+        $('.slider-2-2').not('.slick-initialized').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: true,
@@ -209,7 +209,7 @@ $('.section5 .tab li').click(function () {
     if($(this).hasClass('show-tab')){
         $(this).removeClass('show-tab');
         $(this).closest('.content').find('.tab-content' + '-' + data_tab).removeClass('show-tab')
-        $('.slider-3-1').slick({
+        $('.slider-3-1').not('.slick-initialized').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: true,
@@ -220,7 +220,7 @@ $('.section5 .tab li').click(function () {
         $(this).addClass('show-tab');
         $(this).closest('.content').find('.tab-content').removeClass('show-tab')
         $(this).closest('.content').find('.tab-content' + '-' + data_tab).addClass('show-tab')
-        $('.slider-3-2').slick({
+        $('.slider-3-2').not('.slick-initialized').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: true,
