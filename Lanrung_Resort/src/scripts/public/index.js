@@ -3,9 +3,9 @@
 
 
 $(document).ready(function () {
-
     initSlider();
 
+    // toggle mobile------------------------------------------------------------
     $('.navbar-toggler').click(function (e) {
         e.stopPropagation();
         if ($(this).closest('.lanrung').find('header').hasClass('active')) {
@@ -19,7 +19,9 @@ $(document).ready(function () {
     $('body').click(function(e){
         $('header').removeClass('active')
     })
+    //end toggle mobile------------------------------------------------------------
 
+    //header when click------------------------------------------------------------
     $('header li a').click(function () {
         if ($(this).hasClass('active')) {
             $(this).removeClass('active')
@@ -28,26 +30,27 @@ $(document).ready(function () {
         }
     })
 
-    function goToByScroll(echo) {
-        $('html,body').animate({
-            scrollTop: $("." + echo).offset().top
-        }, 'slow');
-    }
-
-
-
-
     $("header li a").click(function (e) {
         // Prevent a page reload when a link is pressed
         e.preventDefault();
         // Call the scroll function
         goToByScroll($(this).attr('link'));
     });
+    //end header when click------------------------------------------------------------
 
 
+    //function scroll and active header------------------------------------------------------------
+    function goToByScroll(echo) {
+        $('html,body').animate({
+            scrollTop: $("." + echo).offset().top
+        }, 'slow');
+    }
+    //end function scroll and active header------------------------------------------------------------
 
 });
 
+
+// scroll active menu on header-----------------------------------------------------------
 $(window).on('scroll', function () {
     var scrollDistance = $(window).scrollTop();
 
@@ -58,18 +61,6 @@ $(window).on('scroll', function () {
         }
     });
 }).scroll();
-
-function initSlider() {
-    $('.slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        arrows: false,
-        autoplay: true
-    });
-}
-
 
 var sections = $('.section')
     , nav = $('.timeline')
@@ -91,20 +82,22 @@ $(window).on('scroll', function () {
         }
     });
 });
+// scroll active menu on header-----------------------------------------------------------
 
 
 
-$('.lanrung .registration img').click(function (e) {
-    e.stopPropagation();
-    if ($('.form').hasClass('active')) {
-        $('.form').removeClass('active')
-        $(this).closest('.registration .item').css('padding-bottom', '0')
-    }
-    else {
-        $('.form').addClass('active')
-        $(this).closest('.registration .item').css('padding-bottom', '25px')
-    }
-})
+// slider------------------------------------
+function initSlider() {
+    $('.slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        autoplay: true
+    });
+}
+
 
 $('.slider-for').slick({
     slidesToShow: 1,
@@ -129,9 +122,6 @@ $('.slider-nav').slick({
                 dots: false,
             }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
     ]
 });
 
@@ -175,17 +165,20 @@ $('.slider-nav-1').slick({
     arrows: false,
     centerMode: false,
 });
+
+// end slider------------------------------------
  
+// tab------------------------------------
 var data_tab = 1;
-$('.section4 .tab'+'-'+data_tab).addClass('active')
+$('.section4 .tab'+'-'+data_tab).addClass('show-tab')
 
 $('.section4 .tab li').click(function () {
     data_tab = $(this).attr('data-tab');
-    $('.section4 .tab li').removeClass('active');
+    $('.section4 .tab li').removeClass('show-tab');
 
-    if($(this).hasClass('active')){
-        $(this).removeClass('active');
-        $(this).closest('.content').find('.tab-content' + '-' + data_tab).removeClass('active')
+    if ($(this).hasClass('show-tab')){
+        $(this).removeClass('show-tab');
+        $(this).closest('.content').find('.tab-content' + '-' + data_tab).removeClass('show-tab')
         $('.slider-2-1').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -195,9 +188,9 @@ $('.section4 .tab li').click(function () {
         });
 
     }else{
-        $(this).addClass('active');
-        $(this).closest('.content').find('.tab-content').removeClass('active')
-        $(this).closest('.content').find('.tab-content' + '-' + data_tab).addClass('active')
+        $(this).addClass('show-tab');
+        $(this).closest('.content').find('.tab-content').removeClass('show-tab')
+        $(this).closest('.content').find('.tab-content' + '-' + data_tab).addClass('show-tab')
         $('.slider-2-2').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -211,11 +204,11 @@ $('.section4 .tab li').click(function () {
 
 $('.section5 .tab li').click(function () {
     var data_tab = $(this).attr('data-tab');
-    $('.section5 .tab li').removeClass('active');
+    $('.section5 .tab li').removeClass('show-tab');
 
-    if($(this).hasClass('active')){
-        $(this).removeClass('active');
-        $(this).closest('.content').find('.tab-content' + '-' + data_tab).removeClass('active')
+    if($(this).hasClass('show-tab')){
+        $(this).removeClass('show-tab');
+        $(this).closest('.content').find('.tab-content' + '-' + data_tab).removeClass('show-tab')
         $('.slider-3-1').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -224,9 +217,9 @@ $('.section5 .tab li').click(function () {
             centerMode: false,
         });
     }else{
-        $(this).addClass('active');
-        $(this).closest('.content').find('.tab-content').removeClass('active')
-        $(this).closest('.content').find('.tab-content' + '-' + data_tab).addClass('active')
+        $(this).addClass('show-tab');
+        $(this).closest('.content').find('.tab-content').removeClass('show-tab')
+        $(this).closest('.content').find('.tab-content' + '-' + data_tab).addClass('show-tab')
         $('.slider-3-2').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -236,4 +229,4 @@ $('.section5 .tab li').click(function () {
         });
     }
 })
-
+//end tab------------------------------------
