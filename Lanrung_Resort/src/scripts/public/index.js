@@ -230,3 +230,19 @@ $('.section5 .tab li').click(function () {
     }
 })
 //end tab------------------------------------
+
+
+
+// validate form-----------------------------
+var form = $("#myform");
+form.validate();
+$("#submit-register").click(function () {
+    // console.log(form.valid())
+    if (!form.valid()){
+        $('.error').html('Vui lòng nhập đủ thông tin!')
+    }else{
+        $('#thanks-form').modal('show')
+        $('#register-form').modal('hide')
+    }
+});
+

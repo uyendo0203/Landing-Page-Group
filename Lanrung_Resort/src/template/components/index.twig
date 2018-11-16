@@ -446,7 +446,7 @@
 
     </div>
 
-    <!-- Modal -->
+    <!-- Modal register-->
     <div class="modal fade" id="register-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -456,14 +456,14 @@
                 <div class="modal-body">
                     <h3 class="title">Đăng kí tham quan nhà mẫu</h3>
                     <div class="form">
-                        <form action="">
+                        <form action="" id="myform">
                             <div class="form-group">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <label>Họ Tên:</label>
                                     </div>
                                     <div class="col-md-8">
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" name="fullname" required>
                                     </div>
                                 </div>
                             </div>
@@ -473,7 +473,7 @@
                                         <label>Email:</label>
                                     </div>
                                     <div class="col-md-8">
-                                        <input type="email" class="form-control">
+                                        <input type="email" class="form-control" name="email" required>
                                     </div>
                                 </div>
                             </div>
@@ -483,7 +483,7 @@
                                         <label>Số điện thoại:</label>
                                     </div>
                                     <div class="col-md-8">
-                                        <input type="number" class="form-control">
+                                        <input type="number" class="form-control" name="phone" required>
                                     </div>
                                 </div>
                             </div>
@@ -493,7 +493,7 @@
                                         <label>Số CMND:</label>
                                     </div>
                                     <div class="col-md-8">
-                                        <input type="number" class="form-control">
+                                        <input type="number" class="form-control" name="idcard" required>
                                     </div>
                                 </div>
                             </div>
@@ -504,15 +504,13 @@
                                         <label>Ghi chú:</label>
                                     </div>
                                     <div class="col-md-8">
-                                        <textarea rows="3" class="form-control"></textarea>
+                                        <textarea rows="3" class="form-control" name="notes"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="submit-form">
-                                <button class="submit" type="button">HOÀN TẤT</button>
+                                <button class="submit" id="submit-register" type="button">HOÀN TẤT</button>
                             </div>
-                            
-
                         </form>
                     </div>
 
@@ -522,3 +520,36 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal thanks-->
+    <div class="modal fade" id="thanks-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-close" data-dismiss="modal">
+                    <img src="./assets/images/x.png" alt="">
+                </div>
+                <div class="modal-body">
+                    <h3 class="title">
+                        Cám ơn bạn đã đăng ký  tham quan nhà mẫu.<br>  Chúng tôi sẽ liên hệ <br>với bạn trong thời gian sớm nhất
+                    </h3>
+                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal thanks-->
+     <div class="modal fade" id="error-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3 class="title">
+                       Vui lòng nhập đủ thông tin!
+                    </h3>
+                   
+                </div>
+
+            </div>
+        </div>
+    </div> 
