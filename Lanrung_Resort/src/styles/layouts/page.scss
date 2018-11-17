@@ -175,7 +175,8 @@ html {
                 padding-right: 30px;
                 text-align: right;
                 height: 50px;
-                font-size: 12pt;
+                // font-size: 12pt;
+                font-size: 16px;
                 &::after {
                     position: absolute;
                     content: '';
@@ -274,9 +275,10 @@ html {
             z-index: 1;
             border: 1px solid #9d8c6f;
             color: #d1b573;
-            font-size: 15pt;
+            // font-size: 15pt;
+            font-size: 20px;
             height: 35px;
-            width: 270px;
+            // width: 270px;
             &:hover,
             &:focus {
                 text-decoration: underline;
@@ -319,31 +321,59 @@ html {
                 position: static;
                 margin: 20px;
             }
+            @media(min-width:1500px) {
+                bottom:22px
+            }
             color:#cbaf6e;
             text-align: center;
             .text-1 {
-                font-size: 28pt;
+                // font-size: 28pt;
+
+                font-size: 36px;
                 @media(max-width: 1400px) {
                     margin-bottom: -13px;
+                    
+                }
+                @media(max-width: 1024px) {
+                    font-size: 30px;
+                    
                 }
             }
             .text-2 {
+                @media(min-width:1500px) {
+                    margin-bottom: 6px;
+                }
                 span {
                     &:first-child {
-                        font-size: 20pt;
-                        text-transform: uppercase
+                        // font-size: 20pt;
+                        font-size: 26px;
+                        text-transform: uppercase;
+                        @media(max-width: 1024px) {
+                            font-size: 22px;
+                            
+                        }
                     }
                     &:last-child {
-                        font-size: 33pt;
-                        @media(max-width: 7680px) {
-                            font-size: 27pt;
+                        // font-size: 33pt;
+                        font-size: 35px;
+                        @media(max-width: 1024px) {
+                            font-size: 33px;
+                            
                         }
+                        // @media(max-width: 7680px) {
+                        //     font-size: 36px;
+                        // }
                     }
                 }
             }
             .text-3 {
                 text-transform: uppercase;
-                font-size: 20pt;
+                // font-size: 20pt;
+                font-size: 26px;
+                @media(max-width: 1024px) {
+                    font-size: 22px;
+                    
+                }
             }
         }
     }
@@ -383,7 +413,7 @@ html {
                 right: 20px;
             }
             .left {
-                width: 51%;
+                width: 52%;
                 float: left;
                 @media(max-width: 1024px) {
                     float: none;
@@ -391,9 +421,10 @@ html {
                 }
             }
             .right {
-                width: 49%;
+                width: 46%;
                 float: right;
                 transform: translateY(75px);
+                padding-right: 97px;
                 @media(max-width: 1500px) {
                     transform: translateY(30px);
                 }
@@ -403,9 +434,10 @@ html {
                     transform: none;
                     margin-bottom: 25px;
                     margin-top: 20px;
+                    padding-right: 0
                 }
                 .item {
-                    margin-left: 30px;
+                    // margin-left: 30px;
                     padding: 20px 10px 20px 32px;
                     border: 1px solid #98835a;
                     background-color: #0b0d2a;
@@ -424,7 +456,8 @@ html {
                         li {
                             color: #debd71;
                             margin-bottom: 15px;
-                            font-size: 12pt;
+                            // font-size: 12pt;
+                            font-size: 16px;
                             &:nth-child(6),
                             &:nth-child(7),
                             &:nth-child(8),
@@ -494,14 +527,15 @@ html {
                 margin-bottom: 20px;
             }
             .title {
-                font-size: 27pt;
+                font-size: 36px;
                 color: #debd71;
                 margin-left: -10px;
                 padding-bottom: 29px;
                 margin-bottom: 0;
                 @media(max-width: 1024px) {
                     margin-top: 20px;
-                    text-align: center
+                    text-align: center;
+                    font-size: 30px;
                 }
             }
             .left {
@@ -512,7 +546,8 @@ html {
                     width: 100%;
                 }
                 .text {
-                    font-size: 16pt;
+                    // font-size: 16pt;
+                    font-size: 21px;
                     color: #debd71;
                     @media(max-width: 1024px) {
                         font-size: 12pt
@@ -583,14 +618,15 @@ html {
                 }
             }
             .title {
-                font-size: 27pt;
+                font-size: 36px;
                 color: #debd71;
                 margin-left: -10px;
                 padding-bottom: 29px;
                 margin-bottom: 0;
                 @media(max-width: 1024px) {
                     margin-left: 0;
-                    text-align: center
+                    text-align: center;
+                    font-size: 30px;
                 }
             }
             .tab {
@@ -666,7 +702,8 @@ html {
                         }
                         p {
                             color: #debd71;
-                            font-size: 14pt;
+                            // font-size: 14pt;
+                            font-size: 18px;
                             margin-bottom: 27px;
                             @media(max-width: 1024px) {
                                 font-size: 12pt
@@ -706,6 +743,9 @@ html {
                 .right {
                     width: 40%;
                     float: right;
+                    @media(min-width: 1500px) {
+                        width: 38%
+                    }
                     @media(max-width: 1024px) {
                         float: none;
                         width: 100%;
@@ -717,6 +757,9 @@ html {
                         max-width: 100%;
                         border-radius: 15px;
                         margin-left: 27px;
+                        @media(min-width: 1500px) {
+                            margin-left: 0
+                        }
                         @media(max-width: 1024px) {
                             margin-left: 0
                         }
@@ -725,7 +768,8 @@ html {
                         }
                         p {
                             color: #debd71;
-                            font-size: 14pt;
+                            // font-size: 14pt;
+                            font-size: 18px;
                             margin-bottom: 27px;
                             &:last-child {
                                 margin-bottom: 0
@@ -737,7 +781,7 @@ html {
                     width: 59%;
                     float: left;
                     @media(min-width: 1500px) {
-                        width: 57%;
+                        width: 59%;
                     }
                     @media(max-width:1024px) {
                         float: none;
@@ -797,7 +841,8 @@ html {
             }
             .item {
                 .title-item {
-                    font-size: 16pt;
+                    // font-size: 16pt;
+                    font-size: 20px;
                     color: #debd71;
                     font-family: 'SFUShannonBold';
                     text-transform: uppercase;
@@ -840,13 +885,15 @@ html {
                     display: inline-block;
                     position: relative;
                     padding: 0 23px;
+                  
                     font-size: 16pt;
                     cursor: pointer;
                     @media(max-width: 1024px) {
                         font-size: 14pt
                     }
                     @media(max-width: 768px) {
-                        font-size: 12pt
+                        font-size: 12pt;
+                        padding: 0 8px;
                     }
                     &:nth-child(1) {
                         padding-left: 0
@@ -864,6 +911,9 @@ html {
                             background-color: #debd71;
                             right: 0;
                             bottom: 3px;
+                            @media(max-width: 768px) {
+                                right: -3px;
+                            }
                         }
                     }
                 }
@@ -897,10 +947,11 @@ html {
                 margin: auto;
             }
             .text {
-                font-size: 45pt;
+                // font-size: 45pt;
+                font-size: 60px;
                 color: #debd71;
                 @media(max-width: 768px) {
-                    font-size: 27pt;
+                    font-size: 36px;
                     padding-left: 30px;
                     padding-right: 30px;
                 }
@@ -915,6 +966,9 @@ html {
             }
         }
         .item {
+            @media(min-width: 1500px) {
+                margin-top: 60px;
+            }
             @media(max-width: 1024px) {
                 margin-left: 20px;
                 margin-right: 20px;
@@ -930,6 +984,7 @@ html {
                 }
                 li {
                     position: relative;
+                    margin-bottom: 10px;
                     @media(max-width: 768px) {
                         margin-bottom: 20px;
                     }
@@ -937,7 +992,10 @@ html {
             }
             .number {
                 font-family: 'SFUBelleRegular';
-                font-size: 77pt;
+                // font-size: 77pt;
+                // font-size: 102px;
+                font-size: 100px;
+                line-height: 110px;
                 color: #debd71;
                 width: 100px;
                 float: left;
@@ -948,12 +1006,13 @@ html {
             }
             .text {
                 font-family: 'SFUShannonBook';
-                font-size: 18pt;
+                // font-size: 18pt;
+                font-size: 24px;
                 color: #debd71;
-                transform: translateY(55px);
-                -moz-transform: translateY(55px);
-                -webkit-transform: translateY(55px);
-                -o-transform: translateY(55px);
+                transform: translateY(30px);
+                -moz-transform: translateY(30px);
+                -webkit-transform: translateY(30px);
+                -o-transform: translateY(30px);
                 @media(max-width: 1024px) {
                     transform: translateY(22px);
                     -moz-transform: translateY(22px);
@@ -1059,7 +1118,8 @@ html {
                 text-align: center;
                 p {
                     font-family: 'SFUShannonBook';
-                    font-size: 14pt;
+                    // font-size: 14pt;
+                    font-size: 19px;
                 }
             }
             .left {
@@ -1073,13 +1133,16 @@ html {
             }
         }
         .address {
-            font-size: 14pt;
+            // font-size: 14pt;
+            font-size: 19px;
+
             margin-left: 50px;
             @media(max-width: 1024px) {
                 margin-left: 0;
             }
             span {
-                font-size: 17pt;
+                // font-size: 17pt;
+                font-size: 22px;
                 font-family: 'SFUShannonBold';
                 @media(max-width: 768px) {
                     font-size: 15pt
