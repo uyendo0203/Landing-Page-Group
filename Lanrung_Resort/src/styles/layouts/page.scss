@@ -175,6 +175,7 @@ html {
                 padding-right: 30px;
                 text-align: right;
                 height: 50px;
+                text-transform: uppercase;
                 // font-size: 12pt;
                 font-size: 16px;
                 &::after {
@@ -289,7 +290,12 @@ html {
                 color: #fff;
                 left: 50%;
                 transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
                 bottom: 10px;
+                max-width: 310px;
+                width: 100%;
             }
         }
     } // all section-----------------------------------
@@ -338,6 +344,15 @@ html {
                     font-size: 30px;
                     
                 }
+                
+                @media(min-width: 1200px) {
+                    font-size: 32px;
+                }
+                @media(min-width: 1340px) {
+                    font-size: 36px;
+                    margin-bottom: -4px
+                }
+               
             }
             .text-2 {
                 @media(min-width:1500px) {
@@ -412,6 +427,11 @@ html {
                 left: 20px;
                 right: 20px;
             }
+
+            @media only screen and (min-width:1200px) and (max-width: 1340px) {
+                top: 95px;
+            }
+
             .left {
                 width: 52%;
                 float: left;
@@ -435,6 +455,9 @@ html {
                     margin-bottom: 25px;
                     margin-top: 20px;
                     padding-right: 0
+                }
+                @media only screen and (min-width:1200px) and (max-width: 1340px) {
+                   transform: none
                 }
                 .item {
                     // margin-left: 30px;
@@ -526,6 +549,10 @@ html {
                 padding-right: 20px;
                 margin-bottom: 20px;
             }
+           
+            @media only screen and (min-width:1025px) and (max-width: 1340px) {
+                padding-right: 75px
+            }
             .title {
                 font-size: 36px;
                 color: #debd71;
@@ -545,6 +572,9 @@ html {
                     float: none;
                     width: 100%;
                 }
+                @media only screen and (min-width:1025px) and (max-width: 1340px) {
+                    width:40%;
+                }
                 .text {
                     // font-size: 16pt;
                     font-size: 21px;
@@ -560,6 +590,9 @@ html {
                     @media(min-width: 1500px) {
                         max-width: 550px;
                     }
+                    @media only screen and (min-width:1025px) and (max-width: 1340px) {
+                        max-width: 245px;
+                    }
                     img {
                         width: 100%;
                     }
@@ -571,6 +604,9 @@ html {
                 @media(max-width: 1024px) {
                     float: none;
                     width: 100%;
+                }
+                @media only screen and (min-width:1025px) and (max-width: 1340px) {
+                    width:60%;
                 }
                 .img {
                     img {
@@ -603,9 +639,9 @@ html {
                 top: 35px;
                 left: 70px;
             }
-            @media screen and (max-width: 1026px) and (min-width: 1022px) {
-                top: 65px;
-            }
+            // @media screen and (min-width: 1026px) and (max-width: 1340px) {
+            //     top: 65px;
+            // }
             @media(max-width:1024px) {
                 position: static;
                 background-color: transparent;
@@ -628,6 +664,10 @@ html {
                     text-align: center;
                     font-size: 30px;
                 }
+                @media only screen and (min-width:1025px) and (max-width: 1340px) {
+                    font-size: 31px;
+                    text-align: center
+                }
             }
             .tab {
                 padding-left: 0;
@@ -643,6 +683,19 @@ html {
                     padding: 0 23px;
                     font-size: 16pt;
                     cursor: pointer;
+                    text-transform: uppercase;
+                    &:hover{
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            width: 45%;
+                            background-color: #debd71;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            bottom: -4px;
+                        }
+                    }
                     @media(max-width: 1024px) {
                         font-size: 14pt
                     }
@@ -652,6 +705,16 @@ html {
                     &.show-tab {
                         text-transform: uppercase;
                         font-weight: bold;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            width: 45%;
+                            background-color: #debd71;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            bottom: -4px;
+                        }
                     }
                     &:nth-child(1) {
                         &:after {
@@ -831,7 +894,7 @@ html {
             @media(max-width:1500px) {
                 top: 70px;
             }
-            @media screen and (max-width: 1026px) and (min-width: 1022px) {
+            @media screen and (max-width: 1026px) and (max-width: 1340px) {
                 top: 65px;
             }
             @media(max-width:1024px) {
@@ -885,9 +948,22 @@ html {
                     display: inline-block;
                     position: relative;
                     padding: 0 23px;
-                  
+                    text-transform: uppercase;
                     font-size: 16pt;
                     cursor: pointer;
+
+                    &:hover{
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            width: 55%;
+                            background-color: #debd71;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            bottom: -4px;
+                        }
+                    }
                     @media(max-width: 1024px) {
                         font-size: 14pt
                     }
@@ -901,6 +977,16 @@ html {
                     &.show-tab {
                         text-transform: uppercase;
                         font-weight: bold;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            width: 55%;
+                            background-color: #debd71;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            bottom: -4px;
+                        }
                     }
                     &:nth-child(1) {
                         &:after {
@@ -920,8 +1006,12 @@ html {
             }
             .tab-content {
                 display: none;
+                
                 &.show-tab {
                     display: block
+                }
+                @media screen and (min-width: 1026px) and (max-width: 1340px) {
+                    width: 75%;
                 }
             }
         }
@@ -1045,7 +1135,7 @@ html {
             @media(max-width:1400px) {
                 top: 105px;
             }
-            @media screen and (max-width: 1026px) and (min-width: 1022px) {
+            @media screen and (min-width: 1026px) and (max-width: 1340px) {
                 top: 65px;
             }
             @media(max-width:1024px) {
@@ -1287,7 +1377,10 @@ html {
             @media (max-width: 768px) {
                 max-width: 500px;
             }
-            @media (max-width: 420px) {
+            @media (max-width: 500px) {
+                max-width: 420px;
+            }
+            @media (max-width: 380px) {
                 max-width: 320px;
             }
         }

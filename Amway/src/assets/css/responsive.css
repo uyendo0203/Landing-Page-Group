@@ -1,0 +1,85 @@
+@media only screen and (max-width: 1023px) {
+    .arrow-right {
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-left: 40px solid #fff;
+    }
+    
+    .arrow-left {
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-right: 40px solid #fff;
+    }
+    #blog .blog-item.full-img .blog-item__content .title {
+        font-size: 40px;
+        margin-bottom: 35px
+    }
+    #blog .blog-item__content .title {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    
+    #blog .blog-item__content .description {
+        font-size: 16px;
+    }
+    
+    #blog .blog-item__content a {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .arrow-up {
+        display: block;
+    }
+    .arrow-right {
+        display: none;
+    }
+    .arrow-left {
+        display: none;
+    }
+    #about-us {
+        padding: 85px 0
+    }
+    #blog .blog-item.full-img .blog-item__content {
+        width: 100%;
+        position: unset;
+    }
+    #blog .blog-item.full-img .blog-item__content .title {
+        font-size: 40px;
+        margin-bottom: 35px;
+        color: rgb(13, 24, 40)
+    }
+    #blog .blog-item.full-img .blog-item__content .description {
+        color: rgb(13, 24, 40)
+    }
+    #blog .blog-item__content .title {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    
+    #blog .blog-item__content .description {
+        font-size: 16px;
+    }
+    
+    #blog .blog-item__content a {
+        font-size: 16px;
+    }
+
+    #blog .blog-item .blog-item__image {
+        width: 100%;
+        height: auto;
+        float: none !important;
+    }
+
+    #blog .blog-item .blog-item__content {
+        float: none !important;
+        width: 100%;
+    }
+
+    /*------Our Teams--------*/
+    #our-teams .our-teams__item h3 {
+        font-size: 40px;
+        bottom: 50px;
+        right: 20px;
+    }
+}
