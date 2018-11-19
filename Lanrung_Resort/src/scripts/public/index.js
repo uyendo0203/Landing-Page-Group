@@ -102,9 +102,11 @@ function initSlider() {
 $('.slider-for').not('.slick-initialized').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     fade: true,
-    asNavFor: '.slider-nav'
+    asNavFor: '.slider-nav',
+    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' ></i></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right'></i></button>"
 });
 $('.slider-nav').not('.slick-initialized').slick({
     slidesToShow: 3,
@@ -128,9 +130,11 @@ $('.slider-nav').not('.slick-initialized').slick({
 $('.slider-for-1').not('.slick-initialized').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     fade: true,
     asNavFor: '.slider-nav-1',
+    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' ></i></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right'></i></button>"
 
 });
 $('.slider-nav-1').not('.slick-initialized').slick({
@@ -155,15 +159,19 @@ $('.slider-2-1').not('.slick-initialized').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
-    arrows: false,
+    arrows: true,
     centerMode: false,
+    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' ></i></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right'></i></button>"
 });
 $('.slider-3-1').not('.slick-initialized').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
-    arrows: false,
+    arrows: true,
     centerMode: false,
+    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' ></i></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right'></i></button>"
 });
 
 // end slider------------------------------------
@@ -195,8 +203,11 @@ $('.section4 .tab li').click(function () {
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: true,
-            arrows: false,
+            arrows: true,
             centerMode: false,
+
+            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' ></i></button>",
+            nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right'></i></button>"
         });
             
     }
@@ -213,8 +224,11 @@ $('.section5 .tab li').click(function () {
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: true,
-            arrows: false,
+            arrows: true,
             centerMode: false,
+
+            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' ></i></button>",
+            nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right'></i></button>"
         });
     }else{
         $(this).addClass('show-tab');
@@ -224,8 +238,11 @@ $('.section5 .tab li').click(function () {
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: true,
-            arrows: false,
+            arrows: true,
             centerMode: false,
+
+            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' ></i></button>",
+            nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right'></i></button>"
         });
     }
 })
