@@ -15,6 +15,7 @@ function initSlider() {
         slidesToShow: 1,
         centerMode: true,
         arrows:false,
+        autoplay:true,
         dots:false,
         centerPadding: '450px',
         responsive: [
