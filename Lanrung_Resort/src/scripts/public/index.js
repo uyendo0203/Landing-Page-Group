@@ -105,8 +105,8 @@ $('.slider-for').not('.slick-initialized').slick({
     arrows: true,
     fade: true,
     asNavFor: '.slider-nav',
-    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' ></i></button>",
-    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right'></i></button>"
+    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right'></i></button>"
 });
 $('.slider-nav').not('.slick-initialized').slick({
     slidesToShow: 3,
@@ -133,8 +133,8 @@ $('.slider-for-1').not('.slick-initialized').slick({
     arrows: true,
     fade: true,
     asNavFor: '.slider-nav-1',
-    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' ></i></button>",
-    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right'></i></button>"
+    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right'></i></button>"
 
 });
 $('.slider-nav-1').not('.slick-initialized').slick({
@@ -161,8 +161,8 @@ $('.slider-2-1').not('.slick-initialized').slick({
     dots: true,
     arrows: true,
     centerMode: false,
-    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' ></i></button>",
-    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right'></i></button>"
+    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right'></i></button>"
 });
 $('.slider-3-1').not('.slick-initialized').slick({
     slidesToShow: 1,
@@ -170,8 +170,8 @@ $('.slider-3-1').not('.slick-initialized').slick({
     dots: true,
     arrows: true,
     centerMode: false,
-    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' ></i></button>",
-    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right'></i></button>"
+    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right'></i></button>"
 });
 
 // end slider------------------------------------
@@ -206,8 +206,8 @@ $('.section4 .tab li').click(function () {
             arrows: true,
             centerMode: false,
 
-            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' ></i></button>",
-            nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right'></i></button>"
+            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
+            nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right'></i></button>"
         });
             
     }
@@ -227,8 +227,8 @@ $('.section5 .tab li').click(function () {
             arrows: true,
             centerMode: false,
 
-            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' ></i></button>",
-            nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right'></i></button>"
+            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
+            nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right'></i></button>"
         });
     }else{
         $(this).addClass('show-tab');
@@ -241,8 +241,8 @@ $('.section5 .tab li').click(function () {
             arrows: true,
             centerMode: false,
 
-            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' ></i></button>",
-            nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right'></i></button>"
+            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
+            nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right'></i></button>"
         });
     }
 })

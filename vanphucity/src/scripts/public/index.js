@@ -1,9 +1,26 @@
 
 
 
-
+$('.is_loading').css('opacity','1')
 $(document).ready(function () {
 
+
+    // loading page------------------
+    $('body').css('overflow','hidden')
+    setTimeout(() => {
+        $('.is_loading').css({
+            'opacity': '0',
+            'z-index':'-1'
+        });
+        $('body').css('overflow', 'auto')
+    }, 3000);
+    // loading page end------------------
+
+
+
+
+
+    AOS.init();
     initSlider();
 
 

@@ -9,7 +9,11 @@
 /*
     LAYOUTS
 */
- @import "./layouts/**/*";
+//  @import "./layouts/**/*";
+ @import "./layouts/page.scss";
+ @import "./layouts/fonts.scss";
+ @import "./layouts/global.scss";
+ @import "./layouts/header.scss";
 /*
     ORGIN
 */

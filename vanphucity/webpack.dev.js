@@ -7,13 +7,7 @@
    devServer: {
 		contentBase: path.join(__dirname, "dist"),
 		compress: true,
-		port: 4100,
-		publicPath:"/",
-		historyApiFallback: true,
-		watchContentBase: true,
-		disableHostCheck: true
-	},
-	performance: {
-        hints: false
-    },
+		port: 3001,
+	   	publicPath:"/"
+	}
  });

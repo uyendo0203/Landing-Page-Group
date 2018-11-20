@@ -5,7 +5,8 @@ const webpack = require("webpack");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const glob = require("glob");
 const fs = require("fs");
-// const CssoWebpackPlugin = require('csso-webpack-plugin').default;
+
+const CssoWebpackPlugin = require('csso-webpack-plugin').default;
 
 
 function resolve (dir) {
@@ -25,20 +26,11 @@ function generateHtmlPlugins (templateDir) {
 	  // Create new HTMLWebpackPlugin with options
 	  return new HtmlWebpackPlugin({
 		filename: `${name}.html`,
-		template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
-		cache:true
+		template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`)
 	  })
 	})
 }
 const htmlPlugins = generateHtmlPlugins('./src/template/pages');
-
-
-// const listPage = [];
-// for(var i = 0; i<htmlPlugins.length; i++){
-// 	listPage.push(htmlPlugins[i].options.filename)
-// }
-// console.log(listPage)
-
 
 // -------------------------------------------------- javascript
 function generateJavascript(templateDir){
@@ -80,7 +72,7 @@ module.exports = {
 			{ test: /\.(scss|css)?$/, loader: ExtractTextPlugin.extract({
 					publicPath:"/",
 					fallback: 'style-loader',
-					use: ['css-loader?url=false', 'sass-loader','import-glob-loader']
+					use: ['css-loader?url=false', 'sass-loader']
 				})
 			},
 			{ 
@@ -90,7 +82,7 @@ module.exports = {
 				query: {
 					presets: ['es2015']
 				}
-			},	
+			},
 			{ 
 				test: /\.twig$/, 
 				exclude: /node_modules/,
@@ -133,9 +125,9 @@ module.exports = {
 			filename: "styles/[name].bundle.css"
 		}),  
 		new CopyWebpackPlugin([
-			{ from: './src/scripts/public', to:'./scripts'}
+			{ from: './src/scripts/public', to: './scripts' }
 		]),
-		// new CssoWebpackPlugin({ pluginOutputPostfix: 'min' })
+		new CssoWebpackPlugin({ pluginOutputPostfix: 'min' })
     ]
 	.concat(htmlPlugins)
 };
