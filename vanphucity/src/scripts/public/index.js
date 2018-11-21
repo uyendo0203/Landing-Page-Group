@@ -1,3 +1,146 @@
+var arr_data = [];
+$('.submit-data').click(function(){
+    var name = $('.form-data').find('input[name="name"]').val();
+    var phone = $('.form-data').find('input[name="phone"]').val();
+    var email = $('.form-data').find('input[name="email"]').val();
+    var description = $('.form-data').find('textarea[name="description"]').val();
+    var photo = $('.form-data').find('#result').attr('src')
+
+
+   
+    var obj_data = { 
+        'name': name, 
+        'phone': phone, 
+        'email': email, 
+        'description': description,
+        'photo': photo 
+    }
+    arr_data.push(obj_data)
+    console.log(arr_data)
+
+    // reset form
+    $('.form-data')[0].reset();
+
+    // save data to hidden input
+    $('.data-hidden').val(JSON.stringify(arr_data));
+    
+    // parse data from hidden input
+    var value = $('.data-hidden').val(); 
+    value = JSON.parse(value);
+})
+
+
+
+var cropper;
+
+$('#input').on('change', function (e) {
+
+    var reader;
+    var url;
+    var files = e.target.files;
+    var done = function (url) {
+        $('#input').val('');
+        $('#image').attr('src', url);
+        $('#modal').modal('show');
+    };
+
+    if (files && files.length > 0) {
+        file = files[0];
+
+        if (URL) {
+            done(URL.createObjectURL(file));
+        }
+        else if (FileReader) {
+            reader = new FileReader();
+            reader.onload = function (e) {
+                done(reader.result);
+            };
+            reader.readAsDataURL(file);
+
+            console.log(reader)
+        }
+    }
+});
+
+$('#modal').on('shown.bs.modal', function () {
+    cropper = new Cropper(image, {
+        aspectRatio: 1 / 1,
+        zoomable: false,
+    });
+}).on('hidden.bs.modal', function () {
+    cropper.destroy();
+    cropper = null;
+});
+
+
+
+$('#crop').on('click', function () {
+    // result is a canvas type
+    result = cropper.getCroppedCanvas();
+
+    initialAvatarURL = result.src;
+    result.src = result.toDataURL();
+    fetch(result.src)
+        .then((response) => response.blob())
+        .then((blob) => {
+
+            url = URL.createObjectURL(blob);
+
+            result.onload = function () {
+                // no longer need to read the blob so it's revoked
+                URL.revokeObjectURL(url);
+            };
+
+            result.src = url;
+            // console.log(url)
+
+            // var file = new File([blob], url.split("/")[url.split("/").length - 1]);
+            // var formdata = new FormData();
+
+            // formdata.images =  file;
+
+            // console.log(formdata)
+            // console.log(file)
+
+
+            // $.ajax({
+            // 	url: "http://mercature-v1.acc-svrs.com/admin/api/general/postUpdatePhoto",
+            // 	type: "POST",
+            // 	data: formdata,
+            // 	processData: false,
+            // 	contentType: false,
+            // 	success: function (res) {
+            // 		console.log(res)
+            // 	}
+            // });
+
+            $('#result').attr('src', '')
+            $('#result').attr('src', result.src);
+            $('#modal').modal('hide');
+
+
+
+
+        });
+
+
+
+})
+
+
+
+
+
+
+
+
+// -------------------------------------------------------------------------------------------
+
+
+
+
+
+
 
 
 

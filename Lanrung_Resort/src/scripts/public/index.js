@@ -94,7 +94,8 @@ function initSlider() {
         slidesToScroll: 1,
         dots: false,
         arrows: false,
-        autoplay: true
+        autoplay: true,
+        autoplaySpeed: 3000,
     });
 }
 
@@ -104,6 +105,8 @@ $('.slider-for').not('.slick-initialized').slick({
     slidesToScroll: 1,
     arrows: true,
     fade: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     asNavFor: '.slider-nav',
     prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
     nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right'></i></button>"
@@ -116,6 +119,8 @@ $('.slider-nav').not('.slick-initialized').slick({
     centerMode: false,
     focusOnSelect: true,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
     responsive: [
 
         {
@@ -131,6 +136,8 @@ $('.slider-for-1').not('.slick-initialized').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     fade: true,
     asNavFor: '.slider-nav-1',
     prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
@@ -142,6 +149,8 @@ $('.slider-nav-1').not('.slick-initialized').slick({
     slidesToScroll: 1,
     asNavFor: '.slider-for-1',
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     centerMode: false,
     focusOnSelect: true,
     arrows: false,
@@ -160,6 +169,8 @@ $('.slider-2-1').not('.slick-initialized').slick({
     slidesToScroll: 1,
     dots: true,
     arrows: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     centerMode: false,
     prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
     nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right'></i></button>"
@@ -168,6 +179,8 @@ $('.slider-3-1').not('.slick-initialized').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     arrows: true,
     centerMode: false,
     prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
@@ -191,6 +204,8 @@ $('.section4 .tab li').click(function () {
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
             arrows: false,
             centerMode: false,
         });
@@ -203,6 +218,8 @@ $('.section4 .tab li').click(function () {
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
             arrows: true,
             centerMode: false,
 
@@ -224,6 +241,8 @@ $('.section5 .tab li').click(function () {
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
             arrows: true,
             centerMode: false,
 
@@ -238,6 +257,8 @@ $('.section5 .tab li').click(function () {
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: true,
+             autoplay: true,
+            autoplaySpeed: 3000,
             arrows: true,
             centerMode: false,
 
