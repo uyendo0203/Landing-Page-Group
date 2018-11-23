@@ -276,13 +276,11 @@ html {
             display: block;
         }
     }
-    
     .phone-fixed--update {
         position: fixed;
         bottom: 25px;
         left: 45px;
         z-index: 1;
-      
     }
     .register-button {
         position: fixed;
@@ -290,6 +288,34 @@ html {
         bottom: 25px;
         cursor: pointer;
         z-index: 1;
+        border: 2px solid #fff;
+        animation: 0.12s linear infinite alternate flash_border;
+        -webkit-animation: 0.12s linear infinite alternate flash_border;
+        -moz-animation: 0.12s linear infinite alternate flash_border;
+        @keyframes flash_border {
+            from {
+                border-color: red;
+            }
+            to {
+                border-color: #fff;
+            }
+        }
+        @-webkit-keyframes flash_border {
+            from {
+                border-color: red;
+            }
+            to {
+                border-color: #fff;
+            }
+        }
+        @-moz-keyframes flash_border {
+            from {
+                border-color: red;
+            }
+            to {
+                border-color: #fff;
+            }
+        }
         @media(max-width: 420px) {
             left: 50%;
             transform: translateX(-50%);
@@ -393,7 +419,6 @@ html {
             @media(max-width: 1024px) {
                 max-width: 90%;
             }
-           
             img {
                 width: 100%;
             }
@@ -421,7 +446,6 @@ html {
             @media(max-width: 500px) {
                 max-width: 70px;
             }
-             
         }
         .content {
             position: absolute;

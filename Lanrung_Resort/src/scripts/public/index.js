@@ -1,10 +1,11 @@
 
 
 
-
 $(document).ready(function () {
-    initSlider();
-
+    setInterval(() => {
+        initSlider();
+    }, 100);
+    
     // toggle mobile------------------------------------------------------------
     $('.navbar-toggler').click(function (e) {
         e.stopPropagation();
@@ -88,23 +89,25 @@ $(window).on('scroll', function () {
 
 // slider------------------------------------
 function initSlider() {
+    
     $('.slider').not('.slick-initialized').slick({
-        infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
         arrows: false,
+        infinite: true,
         autoplay: true,
         autoplaySpeed: 3000,
     });
-}
 
+}
 
 $('.slider-for').not('.slick-initialized').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     fade: true,
+    infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,
     asNavFor: '.slider-nav',
@@ -121,6 +124,7 @@ $('.slider-nav').not('.slick-initialized').slick({
     arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
+    infinite: true,
     responsive: [
 
         {
@@ -138,6 +142,7 @@ $('.slider-for-1').not('.slick-initialized').slick({
     arrows: true,
     autoplay: true,
     autoplaySpeed: 3000,
+    infinite: true,
     fade: true,
     asNavFor: '.slider-nav-1',
     prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
@@ -153,6 +158,7 @@ $('.slider-nav-1').not('.slick-initialized').slick({
     autoplaySpeed: 3000,
     centerMode: false,
     focusOnSelect: true,
+    infinite: true,
     arrows: false,
     responsive: [
         {
@@ -171,11 +177,12 @@ $('.slider-2-1').not('.slick-initialized').slick({
     arrows: true,
     autoplay: true,
     autoplaySpeed: 3000,
+    infinite: true,
     centerMode: false,
     prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
     nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right'></i></button>"
 });
-$('.slider-3-1').not('.slick-initialized').slick({
+$('.slider-2-2').not('.slick-initialized').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
@@ -183,9 +190,37 @@ $('.slider-3-1').not('.slick-initialized').slick({
     autoplaySpeed: 3000,
     arrows: true,
     centerMode: false,
+    infinite: true,
     prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
     nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right'></i></button>"
 });
+
+$('.slider-3-1').not('.slick-initialized').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    infinite: true,
+    centerMode: false,
+    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right'></i></button>"
+});
+$('.slider-3-2').not('.slick-initialized').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    centerMode: false,
+    infinite: true,
+    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right'></i></button>"
+});
+
+
 
 // end slider------------------------------------
  
@@ -199,33 +234,38 @@ $('.section4 .tab li').click(function () {
 
     if ($(this).hasClass('show-tab')){
         $(this).removeClass('show-tab');
-        $(this).closest('.content').find('.tab-content' + '-' + data_tab).removeClass('show-tab')
-        $('.slider-2-1').not('.slick-initialized').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: true,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            arrows: false,
-            centerMode: false,
-        });
+        $(this).closest('.content').find('.tab-content' + '-' + data_tab).removeClass('show-tab');
+        setTimeout(() => {
+            $('.slider-2-1').not('.slick-initialized').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: false,
+                infinite: true,
+                centerMode: false,
+            });
+        }, 0);
 
     }else{
         $(this).addClass('show-tab');
-        $(this).closest('.content').find('.tab-content').removeClass('show-tab')
-        $(this).closest('.content').find('.tab-content' + '-' + data_tab).addClass('show-tab')
-        $('.slider-2-2').not('.slick-initialized').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: true,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            arrows: true,
-            centerMode: false,
-
-            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
-            nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right'></i></button>"
-        });
+        $(this).closest('.content').find('.tab-content').removeClass('show-tab');
+        $(this).closest('.content').find('.tab-content' + '-' + data_tab).addClass('show-tab');
+        setTimeout(() => {
+            $('.slider-2-2').not('.slick-initialized').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: true,
+                centerMode: false,
+                infinite: true,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right'></i></button>"
+            });
+        }, 0);
             
     }
 })
@@ -245,7 +285,7 @@ $('.section5 .tab li').click(function () {
             autoplaySpeed: 3000,
             arrows: true,
             centerMode: false,
-
+            infinite: true,
             prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
             nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right'></i></button>"
         });
@@ -261,26 +301,11 @@ $('.section5 .tab li').click(function () {
             autoplaySpeed: 3000,
             arrows: true,
             centerMode: false,
-
+            infinite: true,
             prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' ></i></button>",
             nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right'></i></button>"
         });
     }
 })
 //end tab------------------------------------
-
-
-
-// validate form-----------------------------
-var form = $("#myform");
-form.validate();
-$("#submit-register").click(function () {
-    // console.log(form.valid())
-    if (!form.valid()){
-        $('.error').html('Vui lòng nhập đủ thông tin!')
-    }else{
-        $('#thanks-form').modal('show')
-        $('#register-form').modal('hide')
-    }
-});
 
