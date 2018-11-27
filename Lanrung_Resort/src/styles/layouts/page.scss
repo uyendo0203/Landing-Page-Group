@@ -288,13 +288,13 @@ html {
         bottom: 25px;
         cursor: pointer;
         z-index: 1;
-        border: 2px solid #fff;
+        
         animation: 0.12s linear infinite alternate flash_border;
         -webkit-animation: 0.12s linear infinite alternate flash_border;
         -moz-animation: 0.12s linear infinite alternate flash_border;
         @keyframes flash_border {
             from {
-                border-color: red;
+                border-color: #fff;
             }
             to {
                 border-color: #fff;
@@ -302,7 +302,7 @@ html {
         }
         @-webkit-keyframes flash_border {
             from {
-                border-color: red;
+                border-color: #fff;
             }
             to {
                 border-color: #fff;
@@ -310,7 +310,7 @@ html {
         }
         @-moz-keyframes flash_border {
             from {
-                border-color: red;
+                border-color: #fff;
             }
             to {
                 border-color: #fff;
@@ -334,12 +334,13 @@ html {
             position: fixed;
             right: 40px;
             bottom: 25px;
-            text-transform: uppercase;
             z-index: 1;
-            border: 1px solid #9d8c6f;
-            color: #d1b573;
+            color:#111443;
+            border: 2px solid #9d8c6f;
+            background-image: url('../assets/images/bg-popup.png');
+            background-size: cover;
             font-size: 20px;
-            height: 45px;
+            height: 40px;
             padding: 0 15px;
             font-weight: bold;
             animation: 0.12s linear infinite alternate flash_border;
@@ -347,26 +348,26 @@ html {
             -moz-animation: 0.12s linear infinite alternate flash_border;
             @keyframes flash_border {
                 from {
-                    border-color: black;
+                    border-color: #9d8c6f;
                 }
                 to {
-                    border-color: #d1b573;
+                    border-color: #fff;
                 }
             }
             @-webkit-keyframes flash_border {
                 from {
-                    border-color: black;
+                    border-color: #9d8c6f;
                 }
                 to {
-                    border-color: #d1b573;
+                    border-color: #fff;
                 }
             }
             @-moz-keyframes flash_border {
                 from {
-                    border-color: black;
+                    border-color: #9d8c6f;
                 }
                 to {
-                    border-color: #d1b573;
+                    border-color: #fff;
                 }
             }
             &:hover,
