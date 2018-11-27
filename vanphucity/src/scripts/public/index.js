@@ -1,33 +1,33 @@
 var arr_data = [];
-$('.submit-data').click(function(){
-    var name = $('.form-data').find('input[name="name"]').val();
-    var phone = $('.form-data').find('input[name="phone"]').val();
-    var email = $('.form-data').find('input[name="email"]').val();
-    var description = $('.form-data').find('textarea[name="description"]').val();
-    var photo = $('.form-data').find('#result').attr('src')
+// $('.submit-data').click(function(){
+//     var name = $('.form-data').find('input[name="name"]').val();
+//     var phone = $('.form-data').find('input[name="phone"]').val();
+//     var email = $('.form-data').find('input[name="email"]').val();
+//     var description = $('.form-data').find('textarea[name="description"]').val();
+//     var photo = $('.form-data').find('#result').attr('src')
 
 
    
-    var obj_data = { 
-        'name': name, 
-        'phone': phone, 
-        'email': email, 
-        'description': description,
-        'photo': photo 
-    }
-    arr_data.push(obj_data)
-    console.log(arr_data)
+//     var obj_data = { 
+//         'name': name, 
+//         'phone': phone, 
+//         'email': email, 
+//         'description': description,
+//         'photo': photo 
+//     }
+//     arr_data.push(obj_data)
+//     console.log(arr_data)
 
-    // reset form
-    $('.form-data')[0].reset();
+//     // reset form
+//     $('.form-data')[0].reset();
 
-    // save data to hidden input
-    $('.data-hidden').val(JSON.stringify(arr_data));
+//     // save data to hidden input
+//     $('.data-hidden').val(JSON.stringify(arr_data));
     
-    // parse data from hidden input
-    var value = $('.data-hidden').val(); 
-    value = JSON.parse(value);
-})
+//     // parse data from hidden input
+//     var value = $('.data-hidden').val(); 
+//     value = JSON.parse(value);
+// })
 
 
 
@@ -39,7 +39,6 @@ $('#input').on('change', function (e) {
     var url;
     var files = e.target.files;
     var done = function (url) {
-        $('#input').val('');
         $('#image').attr('src', url);
         $('#modal').modal('show');
     };
@@ -114,21 +113,49 @@ $('#crop').on('click', function () {
             // 	}
             // });
 
+            
             $('#result').attr('src', '')
             $('#result').attr('src', result.src);
             $('#modal').modal('hide');
 
-
-
-
         });
-
-
-
 })
 
-
-
+$(".form-data").validate({
+    
+    rules: {
+        name: {
+            required: true,
+            minlength:5
+        },
+        phone: {
+            required: true,
+            maxlength:10
+        },
+        email: {
+            required: true,
+        },
+        description: {
+            required: true,
+        },
+    },
+    messages:{
+        name: {
+            required: 'Vui lòng nhập đủ họ tên',
+            minlength: 5
+        },
+        phone: {
+            required:'Vui lòng đúng định dạng sdt',
+            minlength:1
+        },
+        email: {
+            required: 'Vui lòng nhập đúng định dạng email',
+        },
+        description: {
+            required: 'Vui lòng nhập dưới 200 kí tự',
+        },
+    }
+});
 
 
 
@@ -146,7 +173,7 @@ $('#crop').on('click', function () {
 
 $('.is_loading').css('opacity','1')
 $(document).ready(function () {
-
+    
 
     // loading page------------------
     $('body').css('overflow','hidden')

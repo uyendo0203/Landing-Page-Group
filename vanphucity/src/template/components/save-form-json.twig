@@ -7,13 +7,12 @@
             </div>
             <div class="content" data-aos="fade-up" data-aos-duration="1000">
                 <div class="form">
-                    <form action="" class="form-data">
+                    <form action="" id="form" class="form-data">
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-md-offset-4 col-md-6">
                                     <img id="result" style="max-width:150px">
-                                    <input style="background:none;border:none" name="photo" type="file" placeholder="upload" id="input">
-                                    
+                                    <input required name="photo" style="background:none;border:none" value="upload" type="file" id="input">
                                 </div>
                             </div>
                         </div>
@@ -55,7 +54,7 @@
                             <textarea placeholder="Mô tả nhu cầu" name="description" type="text" class="form-control"></textarea>
                         </div>
                         <div class="button">
-                            <button type="button" class="submit-data">
+                            <button class="submit-data">
                                 Add data
                             </button>
                         </div>
