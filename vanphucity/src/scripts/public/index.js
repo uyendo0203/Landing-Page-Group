@@ -86,38 +86,35 @@ $('#crop').on('click', function () {
             url = URL.createObjectURL(blob);
 
             result.onload = function () {
-                // no longer need to read the blob so it's revoked
                 URL.revokeObjectURL(url);
             };
 
             result.src = url;
             // console.log(url)
 
-            // var file = new File([blob], url.split("/")[url.split("/").length - 1]);
-            // var formdata = new FormData();
+            var file = new File([blob], url.split("/")[url.split("/").length - 1], { type: 'images/jpeg' });
+            var form = new FormData();
 
-            // formdata.images =  file;
+            // form.photo = file;
 
-            // console.log(formdata)
-            // console.log(file)
+            form.append("photo", file);
 
+            $.ajax({
+                url: "http://mercature-v1.acc-svrs.com/admin/api/general/postUpdatePhoto",
+                data: form,
+                processData: false,
+                contentType:false,
+                type: 'POST',
+                success: (data) => {
+                   console.log(data)
 
-            // $.ajax({
-            // 	url: "http://mercature-v1.acc-svrs.com/admin/api/general/postUpdatePhoto",
-            // 	type: "POST",
-            // 	data: formdata,
-            // 	processData: false,
-            // 	contentType: false,
-            // 	success: function (res) {
-            // 		console.log(res)
-            // 	}
-            // });
-
+                }
+            });
             
-            $('#result').attr('src', '')
-            $('#result').attr('src', result.src);
-            $('#modal').modal('hide');
-
+            // $('#result').attr('src', '')
+            // $('#result').attr('src', data);
+            // $('#modal').modal('hide');
+            
         });
 })
 
