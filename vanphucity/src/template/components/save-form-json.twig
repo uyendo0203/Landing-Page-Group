@@ -12,7 +12,8 @@
                             <div class="row">
                                 <div class="col-md-offset-4 col-md-6">
                                     <img id="result" style="max-width:150px">
-                                    <input required name="photo" style="background:none;border:none" value="upload" type="file" id="input">
+                                    <input name="photo" style="background:none;border:none" value="upload" type="file" id="input">
+                                    <input required  type="text" id="result_example" class="form-control">
                                 </div>
                             </div>
                         </div>
@@ -32,7 +33,10 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                        <button type="button" class="btn btn-primary" id="crop">Crop</button>
+                                        <button type="button" class="btn btn-primary" id="crop">
+                                            <img style="max-width:20px; display: none;" class="loading" src="https://loading.io/spinners/hourglass/lg.sandglass-time-loading-gif.gif" alt="">
+                                            <span>Crop</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -60,58 +64,9 @@
                         </div>
                     </form>
                     <input type="hidden" class="data-hidden">
-                    <img src="https://via.placeholder.com/150"  class="images-hidden" alt="">
-                    <div class="images-test" style="color:#fff"></div>
                 </div>
             </div>
         </div>
-
-        <!-- <div class="footer">
-            <div class="images">
-                <img src="./assets/images/footer.png" alt="">
-            </div>
-            <div class="content">
-                <div class=" col1">
-                    <div class="image_logo">
-                        <img src="./assets/images/logo.png" alt="">
-                    </div>
-
-                </div>
-                <div class="center col2">
-                    <div class="cpn-name">
-                        KHU ĐÔ THỊ VẠN PHÚC
-                    </div>
-                    <div class="address">
-                        Khu đô thị Vạn Phúc Quốc lộ 13, P. Hiệp Bình Phước, Q. Thủ Đức,TP.HCM
-                    </div>
-                    <div class="cskh">
-                        <span>Tổng đài CSKH: </span>
-                        <span class="color-green">1800 6363</span>
-                    </div>
-                </div>
-                <div class="col3">
-                    <div class="list-social">
-                        <a>
-                            <img src="./assets/images/social1.png" alt="">
-                        </a>
-                        <a>
-                            <img src="./assets/images/social2.png" alt="">
-                        </a>
-                        <a>
-                            <img src="./assets/images/social3.png" alt="">
-                        </a>
-                        </ul>
-                        <div class="web-address">
-                            <span>Website:</span>
-                            <span class="color-green">https://khudothivanphuc.com.vn</span>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div> -->
-
     </div>
 </div>
 

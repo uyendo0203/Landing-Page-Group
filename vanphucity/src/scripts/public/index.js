@@ -1,40 +1,42 @@
+// SUBMIT DATA==============================================================================
+
 var arr_data = [];
-// $('.submit-data').click(function(){
-//     var name = $('.form-data').find('input[name="name"]').val();
-//     var phone = $('.form-data').find('input[name="phone"]').val();
-//     var email = $('.form-data').find('input[name="email"]').val();
-//     var description = $('.form-data').find('textarea[name="description"]').val();
-//     var photo = $('.form-data').find('#result').attr('src')
+$('.submit-data').click(function(){
+    var name = $('.form-data').find('input[name="name"]').val();
+    var phone = $('.form-data').find('input[name="phone"]').val();
+    var email = $('.form-data').find('input[name="email"]').val();
+    var description = $('.form-data').find('textarea[name="description"]').val();
+    var photo = $('.form-data').find('#result').attr('src')
 
 
    
-//     var obj_data = { 
-//         'name': name, 
-//         'phone': phone, 
-//         'email': email, 
-//         'description': description,
-//         'photo': photo 
-//     }
-//     arr_data.push(obj_data)
-//     console.log(arr_data)
+    var obj_data = { 
+        'name': name, 
+        'phone': phone, 
+        'email': email, 
+        'description': description,
+        'photo': photo 
+    }
+    arr_data.push(obj_data)
+    console.log(arr_data)
 
-//     // reset form
-//     $('.form-data')[0].reset();
+    // reset form
+    $('.form-data')[0].reset();
 
-//     // save data to hidden input
-//     $('.data-hidden').val(JSON.stringify(arr_data));
+    // save data to hidden input
+    $('.data-hidden').val(JSON.stringify(arr_data));
     
-//     // parse data from hidden input
-//     var value = $('.data-hidden').val(); 
-//     value = JSON.parse(value);
-// })
+    // parse data from hidden input
+    var value = $('.data-hidden').val(); 
+    value = JSON.parse(value);
+})
+// END SUBMIT DATA==============================================================================
 
 
 
+// CROP IMAGES==================================================================================
 var cropper;
-
 $('#input').on('change', function (e) {
-
     var reader;
     var url;
     var files = e.target.files;
@@ -55,7 +57,6 @@ $('#input').on('change', function (e) {
                 done(reader.result);
             };
             reader.readAsDataURL(file);
-
             console.log(reader)
         }
     }
@@ -71,15 +72,23 @@ $('#modal').on('shown.bs.modal', function () {
     cropper = null;
 });
 
-
-
+//crop action
 $('#crop').on('click', function () {
     // result is a canvas type
     result = cropper.getCroppedCanvas();
-
     initialAvatarURL = result.src;
+
+    // result is a base64 type
     result.src = result.toDataURL();
-    fetch(result.src)
+
+    // fetchData
+    fetchData(result.src);
+
+    $('.loading').show()
+    $(this).attr('disabled','disabled')
+})
+function fetchData(dataSrc){
+    fetch(dataSrc)
         .then((response) => response.blob())
         .then((blob) => {
 
@@ -89,37 +98,51 @@ $('#crop').on('click', function () {
                 URL.revokeObjectURL(url);
             };
 
-            result.src = url;
-            // console.log(url)
-
+            dataSrc = url;
             var file = new File([blob], url.split("/")[url.split("/").length - 1], { type: 'images/jpeg' });
             var form = new FormData();
 
             // form.photo = file;
 
             form.append("photo", file);
-
-            $.ajax({
-                url: "http://mercature-v1.acc-svrs.com/admin/api/general/postUpdatePhoto",
-                data: form,
-                processData: false,
-                contentType:false,
-                type: 'POST',
-                success: (data) => {
-                   console.log(data)
-
-                }
-            });
-            
-            // $('#result').attr('src', '')
-            // $('#result').attr('src', data);
-            // $('#modal').modal('hide');
-            
+            resultCropData(form);
         });
-})
+}
 
+function resultCropData(form) {
+    $.ajax({
+        url: "http://mercature-v1.acc-svrs.com/admin/api/general/postUpdatePhoto",
+        data: form,
+        processData: false,
+        contentType: false,
+        type: 'POST',
+        success: (data) => {
+             // $('#result').attr('src', '')
+            // $('#result').attr('src', data);
+
+
+            $('#crop').removeAttr('disabled')
+            $('.loading').hide()
+            $('#modal').modal('hide');
+            $('#result_example').val(data);
+        },
+        errror:(err)=>{
+            console.log(err)
+        }
+    });
+}
+
+//cancel crop action
+$('#modal .btn-default').click(function(){
+    $('#crop').removeAttr('disabled');
+    $('.loading').hide();
+    $('#result_example').val('');
+})
+// END CROP IMAGES==============================================================================
+
+
+// VALIDATE FORM================================================================================
 $(".form-data").validate({
-    
     rules: {
         name: {
             required: true,
@@ -153,7 +176,7 @@ $(".form-data").validate({
         },
     }
 });
-
+// END VALIDATE FORM================================================================================
 
 
 
@@ -161,18 +184,13 @@ $(".form-data").validate({
 // -------------------------------------------------------------------------------------------
 
 
-
-
-
-
-
-
-
+// LOADING DEFAULT================================================================================
 $('.is_loading').css('opacity','1')
+
 $(document).ready(function () {
     
 
-    // loading page------------------
+    // LOADING OFF WHEN HTML DONE================================================================================
     $('body').css('overflow','hidden')
     setTimeout(() => {
         $('.is_loading').css({
@@ -181,16 +199,18 @@ $(document).ready(function () {
         });
         $('body').css('overflow', 'auto')
     }, 3000);
-    // loading page end------------------
+    // END LOADING===========================================================================
 
 
 
 
-
+    // AMINATION===========================================================================
     AOS.init();
+
+    // SLIDER===========================================================================
     initSlider();
 
-
+    // HEADER CLICK AND SCROLL===========================================================================
     $('header li a').click(function () {
         if ($(this).hasClass('active')) {
             $(this).removeClass('active')
@@ -206,8 +226,6 @@ $(document).ready(function () {
     }
 
 
-
-
     $("header li a").click(function (e) {
         // Prevent a page reload when a link is pressed
         e.preventDefault();
@@ -219,6 +237,7 @@ $(document).ready(function () {
 
 });
 
+// SCROLL TO SECTION===========================================================================
 $(window).on('scroll', function () {
     var scrollDistance = $(window).scrollTop();
 
@@ -229,18 +248,6 @@ $(window).on('scroll', function () {
         }
     });
 }).scroll();
-
-function initSlider() {
-    $('.slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        arrows: false,
-        autoplay: true
-    });
-}
-
 
 var sections = $('.section')
     , nav = $('.timeline')
@@ -263,7 +270,7 @@ $(window).on('scroll', function () {
     });
 });
 
-
+// TOGGLE MOBILE ICON===========================================================================
 $('.navbar-toggler').click(function (e) {
     e.stopPropagation();
     if ($(this).closest('.vanphu').find('header').hasClass('active')) {
@@ -274,6 +281,7 @@ $('.navbar-toggler').click(function (e) {
     }
 })
 
+// CLICK BODY AND REMOVE ACTIVE HEADER===========================================================================
 $('body').click(function(e){
     $('header').removeClass('active')
 })
@@ -293,6 +301,27 @@ $('.vanphu .registration img').click(function (e) {
     }
 })
 
+$('.section3 .list-images .n-item').click(function () {
+    var data_images = $(this).attr('images-data');
+    console.log(data_images);
+
+    $(this).closest('.section').find('.images .i-item').removeClass('active')
+    $(this).closest('.section').find('.images .i-item' + '.' + data_images).addClass('active')
+
+})
+
+
+// INIT SLIDER FUNCTION===========================================================================
+function initSlider() {
+    $('.slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        autoplay: true
+    });
+}
 $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -316,9 +345,6 @@ $('.slider-nav').slick({
             dots: false,
           }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
       ]
 });
 
@@ -349,11 +375,3 @@ $('.slider-nav-1').slick({
 });
 
 
-$('.section3 .list-images .n-item').click(function(){
-    var data_images = $(this).attr('images-data');
-    console.log(data_images);
-
-    $(this).closest('.section').find('.images .i-item').removeClass('active')
-    $(this).closest('.section').find('.images .i-item'+'.'+data_images).addClass('active')
-
-})
