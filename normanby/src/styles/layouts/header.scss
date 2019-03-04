@@ -1,0 +1,57 @@
+.header {
+    position: fixed;
+    top: 50px; 
+    width: 100%;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%); 
+    @media (min-width: 768px) {
+        width: 750px;
+    }
+    @media (min-width: 992px) {
+        width: 970px;
+    }
+    @media (min-width: 1200px) {
+        width: 1170px;
+    }
+    @media (min-width: 1920px) {
+        width: 1320px;
+    }
+    @media (max-width:991px) {
+        top: 28px;
+    }
+    .logo {
+        position: absolute;
+        left: 0;
+        @media(max-width:768px) {
+            left: 40px;
+            max-width: 130px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .right {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        @media(max-width: 768px) {
+            width: 100%;
+            text-align: center;
+            top: 60px;
+            display: none;
+            &.active {
+                display: block
+            }
+        }
+    }
+    .icon-mobile {
+        display: none;
+        @media(max-width:768px) {
+            display: block;
+            right: 40px;
+            position: absolute;
+            cursor: pointer;
+        }
+    }
+}
