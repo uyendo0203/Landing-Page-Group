@@ -1,109 +1,44 @@
-@font-face {
-    font-family: 'Roboto-Regular';
-    src:url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Roboto-Black';
-    src:url('../assets/fonts/Roboto-Black.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Roboto-BlackItalic';
-    src:url('../assets/fonts/Roboto-BlackItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Roboto-Bold';
-    src:url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Roboto-BoldItalic';
-    src:url('../assets/fonts/Roboto-BoldItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Roboto-Italic';
-    src:url('../assets/fonts/Roboto-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Roboto-Light';
-    src:url('../assets/fonts/Roboto-Light.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Roboto-LightItalic';
-    src:url('../assets/fonts/Roboto-LightItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Roboto-Medium_0';
-    src:url('../assets/fonts/Roboto-Medium_0.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Roboto-MediumItalic';
-    src:url('../assets/fonts/Roboto-MediumItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Roboto-Thin';
-    src:url('../assets/fonts/Roboto-Thin.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Roboto-ThinItalic';
-    src:url('../assets/fonts/Roboto-ThinItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-// utm-avo
-@font-face {
-    font-family: 'utm-avo';
-    src:url('../assets/fonts/utm-avo.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'utm-avobold';
-    src:url('../assets/fonts/utm-avobold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'utm-avobold-italic';
-    src:url('../assets/fonts/utm-avobold-italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'utm-avoitalic';
-    src:url('../assets/fonts/utm-avoitalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 // SFUBelleRegular
+// @font-face {
+//     font-family: 'SFUBelleRegular';
+//     src:url('../assets/fonts/SFUBelleRegular.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+   
+
 @font-face {
-    font-family: 'SFUBelleRegular';
-    src:url('../assets/fonts/SFUBelleRegular.ttf') format('truetype');
+    font-family: 'iCielGotham-Medium';
+    src: url('../assets/fonts/main/iCielGotham-Medium.eot?#iefix') format('embedded-opentype'),  
+        url('../assets/fonts/main/iCielGotham-Medium.otf')  format('opentype'),
+        url('../assets/fonts/main/iCielGotham-Medium.woff') format('woff'), 
+        url('../assets/fonts/main/iCielGotham-Medium.ttf')  format('truetype'), 
+        url('../assets/fonts/main/iCielGotham-Medium.svg#iCielGotham-Medium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-   
+
+@font-face {
+    font-family: 'iCielGotham-Light';
+    src: url('../assets/fonts/main/iCielGotham-Light.eot?#iefix') format('embedded-opentype'),  
+    url('../assets/fonts/main/iCielGotham-Light.otf')  format('opentype'),
+           url('../assets/fonts/main/iCielGotham-Light.woff') format('woff'), 
+           url('../assets/fonts/main/iCielGotham-Light.ttf')  format('truetype'), 
+           url('../assets/fonts/main/iCielGotham-Light.svg#iCielGotham-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+  @font-face {
+    font-family: 'iCielGotham-Black';
+    src: url('../assets/fonts/main/iCielGotham-Black.eot?#iefix') format('embedded-opentype'),  
+    url('../assets/fonts/main/iCielGotham-Black.otf')  format('opentype'),
+           url('../assets/fonts/main/iCielGotham-Black.woff') format('woff'), 
+           url('../assets/fonts/main/iCielGotham-Black.ttf')  format('truetype'), 
+           url('../assets/fonts/main/iCielGotham-Black.svg#iCielGotham-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  

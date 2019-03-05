@@ -66,7 +66,6 @@ $(document).ready(function () {
     AOS.init();
 
     // SLIDER===========================================================================
-    initSlider();
 
     // HEADER CLICK AND SCROLL===========================================================================
     $('header li a').click(function () {
@@ -147,41 +146,6 @@ $('body').click(function(e){
 
 
 // INIT SLIDER FUNCTION===========================================================================
-function initSlider() {
-    $('.slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        arrows: false,
-        autoplay: true
-    });
-}
-$('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.slider-nav'
-});
-$('.slider-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: true,
-    centerMode: false,
-    focusOnSelect: true,
-    arrows: false,
-    responsive: [
-       
-        {
-          breakpoint: 767,
-          settings: {
-            dots: false,
-          }
-        }
-      ]
-});
 
 $('.slider-section-1').slick({
     slidesToShow: 1,
@@ -192,6 +156,47 @@ $('.slider-section-1').slick({
     speed:3000,  
     prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
     nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+});
+$('.slider-section-5').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,  
+    autoplay:true,
+    speed:3000,  
+    prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+    nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+});
+
+
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    speed:3000,  
+    fade: true,
+    asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    speed:3000,  
+    centerMode: false,
+    focusOnSelect: true,
+    arrows: true,
+    prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+    nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+    responsive: [
+       
+        {
+          breakpoint: 767,
+          settings: {
+            dots: false,
+          }
+        }
+      ]
 });
 
 
