@@ -1,0 +1,13 @@
+.home {
+    position: relative;
+    overflow: auto;
+    .product {
+        span {
+            display: block;
+        }
+        i {
+            font-size: 60px;
+            color: #672377;
+        }
+    }
+}

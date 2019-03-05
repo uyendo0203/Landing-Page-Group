@@ -1,0 +1,37 @@
+.main-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 0;
+    background: #84848430;
+    border-top: 1px solid #8080804a;
+    table {
+        width: 100%;
+        tr {
+            td {
+                width: 25%;
+            }
+        }
+    }
+    .item {
+        text-align: center;
+        span {
+            display: block;
+            color: #000;
+        }
+        i {
+            font-size: 35px;
+            color: #808080;
+        }
+        &.active {
+            span {
+                display: block;
+                color: #000;
+            }
+            i {
+                font-size: 35px;
+                color: #672377;
+            }
+        }
+    }
+}
