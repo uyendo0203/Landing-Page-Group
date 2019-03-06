@@ -191,7 +191,7 @@ $('.slider-nav').slick({
     responsive: [
        
         {
-          breakpoint: 767,
+          breakpoint: 992,
           settings: {
             dots: false,
             arrows:false
