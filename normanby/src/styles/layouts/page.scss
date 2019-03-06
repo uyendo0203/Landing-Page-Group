@@ -852,6 +852,10 @@ body {
             padding-top: 60px;
             height: 110vh;
         }
+        @media(max-width: 768px) {
+            padding-top: 60px;
+            height: 140vh;
+        }
         &::before {
             position: absolute;
             content: '';
@@ -907,6 +911,43 @@ body {
                 }
             }
         }
+        .content-mobile {
+            @media(max-width: 992px) {
+                max-width: 480px;
+                margin-right: 8vw;
+                margin-top: 50px;
+                display: block
+            }
+            @media(max-width: 768px) {
+                padding-right: 0;
+                padding: 0 20px;
+            }
+            .title {
+                font-size: 20px
+            }
+            .list {
+                padding-left: 0;
+                li {
+                    position: relative;
+                    margin: 10px 0;
+                    padding-left: 35px;
+                    list-style: none;
+                    color: #fff;
+                    text-align: left;
+                    &:before {
+                        position: absolute;
+                        content: '';
+                        background-image: url('/assets/images/arr_white.png');
+                        background-size: contain;
+                        height: 39px;
+                        width: 17px;
+                        background-repeat: no-repeat;
+                        left: 0;
+                        top: 5px
+                    }
+                }
+            }
+        }
         .column_right {
             float: right;
             width: 43%;
@@ -919,6 +960,14 @@ body {
                 position: absolute;
                 top: 47%;
                 z-index: 1;
+                display: none
+            }
+            @media(max-width: 992px) {
+                float: none;
+                width: 100%;
+                position: absolute;
+                top: 53%;
+                z-index: 1;
             }
             .content {
                 max-width: 480px;
@@ -929,7 +978,7 @@ body {
                 @media(max-width: 992px) {
                     margin: 0 auto;
                 }
-                @media(max-width: 7682px) {
+                @media(max-width: 768px) {
                     padding-right: 0;
                     padding: 0 20px;
                 }
