@@ -77,8 +77,9 @@ $(document).ready(function () {
     })
 
     function goToByScroll(echo) {
+        console.log(echo)
         $('html,body').animate({
-            scrollTop: $("." + echo).offset().top
+            scrollTop: $("." + echo).offset().top - 130
         }, 'slow');
     }
 
