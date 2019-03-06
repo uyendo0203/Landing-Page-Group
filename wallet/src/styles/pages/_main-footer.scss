@@ -3,7 +3,7 @@
     width: 100%;
     bottom: 0;
     padding: 10px 0;
-    background: #84848430;
+    background: #e8e8e8;
     border-top: 1px solid #8080804a;
     table {
         width: 100%;
@@ -15,6 +15,7 @@
     }
     .item {
         text-align: center;
+        cursor: pointer;
         span {
             display: block;
             color: #000;

@@ -1,14 +1,13 @@
 .main-header {
-    background-image: linear-gradient(to right, #651f76, #651f768c);
-    // height: 18vh;
+    background-image: linear-gradient(to right, #651f76, #651f768c); // height: 18vh;
 }
 
 .search_noti {
-    padding: 10px 20px;
-    padding-right: 0;
+    padding: 10px;
+    padding-right: 20px;
     .search__bar {
-        width: calc(100% - 50px);
-        float: left;
+        width: calc(100% - 40px);
+        float: right;
         input {
             background: transparent;
             color: #fff;
@@ -17,8 +16,8 @@
         }
     }
     .notification {
-        width: 50px;
-        float: right;
+        width: 40px;
+        float: left;
         text-align: center;
         line-height: 35px;
         i {
@@ -29,23 +28,24 @@
 
 .list-action {
     color: #fff;
-    padding: 20px;
+    padding: 20px 1px;
     table {
         width: 100%;
         tr {
             td {
-                width: 33.3%;
+                width: 25%;
             }
         }
     }
     .item {
         text-align: center;
         i {
-            font-size: 40px
+            font-size: 30px
         }
         span {
             display: block;
             margin-top: 7px;
+            font-size: 11px;
             font-family: 'Roboto', sans-serif;
         }
     }
