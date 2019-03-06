@@ -141,6 +141,10 @@ body {
             color: #fff;
             padding-bottom: 15px;
             z-index: 99;
+            @media(max-width: 1440px) {
+               padding: 27px;
+               padding-bottom: 0
+            }
             @media(max-width: 992px) {
                 position: static;
                 margin-top: 0;
@@ -228,6 +232,10 @@ body {
                         background-color: #cde6e1;
                         border:2px solid #fff;
                         font-size: 18px;
+                        @media(max-width: 1440px) {
+                            height: 50px;
+                            line-height: 50px;
+                        }
                         &::-webkit-input-placeholder {
                             /* Chrome/Opera/Safari */
                             color: #000;
@@ -257,7 +265,9 @@ body {
                     text-align: center;
                     outline: none;
                     text-transform: uppercase;
-
+                    @media(max-width: 1440px) {
+                        height: 45px;
+                     }
                     -moz-box-shadow:  1px 4px 0px 0px #67c0b2;
                     -webkit-box-shadow:  1px 4px 0px 0px #67c0b2;
                     box-shadow: 1px 4px 0px 0px #67c0b2;
