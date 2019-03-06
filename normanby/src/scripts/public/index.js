@@ -194,6 +194,7 @@ $('.slider-nav').slick({
           breakpoint: 767,
           settings: {
             dots: false,
+            arrows:false
           }
         }
       ]
