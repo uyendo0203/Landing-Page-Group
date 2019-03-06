@@ -77,7 +77,6 @@ $(document).ready(function () {
     })
 
     function goToByScroll(echo) {
-        console.log(echo)
         $('html,body').animate({
             scrollTop: $("." + echo).offset().top - 130
         }, 'slow');
@@ -92,7 +91,13 @@ $(document).ready(function () {
     });
 
 
-
+    // click to footer
+    $(".btn-register-2").click(function (e) {
+        // Prevent a page reload when a link is pressed
+        e.preventDefault();
+        // Call the scroll function
+        goToByScroll($(this).attr('link'));
+    });
 });
 
 // SCROLL TO SECTION===========================================================================
@@ -199,6 +204,16 @@ $('.slider-nav').slick({
           }
         }
       ]
+});
+
+$(".popup img").click(function () {
+    var $src = $(this).attr("src");
+    $(".show-image").fadeIn();
+    // $(".img-show img").attr("src", $src);
+});
+
+$("span, .overlay").click(function () {
+    $(".show-image").fadeOut();
 });
 
 
