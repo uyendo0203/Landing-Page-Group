@@ -1,39 +1,39 @@
 
 // VALIDATE FORM================================================================================
-$(".form-data").validate({
-    rules: {
-        name: {
-            required: true,
-            minlength:5
-        },
-        phone: {
-            required: true,
-            maxlength:10
-        },
-        email: {
-            required: true,
-        },
-        description: {
-            required: true,
-        },
-    },
-    messages:{
-        name: {
-            required: 'Vui lòng nhập đủ họ tên',
-            minlength: 5
-        },
-        phone: {
-            required:'Vui lòng đúng định dạng sdt',
-            minlength:1
-        },
-        email: {
-            required: 'Vui lòng nhập đúng định dạng email',
-        },
-        description: {
-            required: 'Vui lòng nhập dưới 200 kí tự',
-        },
-    }
-});
+// $(".form-data").validate({
+//     rules: {
+//         name: {
+//             required: true,
+//             minlength:5
+//         },
+//         phone: {
+//             required: true,
+//             maxlength:10
+//         },
+//         email: {
+//             required: true,
+//         },
+//         description: {
+//             required: true,
+//         },
+//     },
+//     messages:{
+//         name: {
+//             required: 'Vui lòng nhập đủ họ tên',
+//             minlength: 5
+//         },
+//         phone: {
+//             required:'Vui lòng đúng định dạng sdt',
+//             minlength:1
+//         },
+//         email: {
+//             required: 'Vui lòng nhập đúng định dạng email',
+//         },
+//         description: {
+//             required: 'Vui lòng nhập dưới 200 kí tự',
+//         },
+//     }
+// });
 // END VALIDATE FORM================================================================================
 
 
@@ -63,7 +63,7 @@ $(document).ready(function () {
 
 
     // AMINATION===========================================================================
-    AOS.init();
+    // AOS.init();
 
     // SLIDER===========================================================================
 
@@ -78,7 +78,7 @@ $(document).ready(function () {
 
     function goToByScroll(echo) {
         $('html,body').animate({
-            scrollTop: $("." + echo).offset().top - 130
+            scrollTop: $("." + echo).offset().top - 84
         }, 'slow');
     }
 
