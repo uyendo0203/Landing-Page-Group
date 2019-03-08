@@ -66,6 +66,7 @@ $(document).ready(function () {
     // AOS.init();
 
     // SLIDER===========================================================================
+    initSlider()
 
     // HEADER CLICK AND SCROLL===========================================================================
     $('header li a').click(function () {
@@ -153,58 +154,64 @@ $('body').click(function(e){
 
 // INIT SLIDER FUNCTION===========================================================================
 
-$('.slider-section-1').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    fade: true,  
-    autoplay:true,
-    speed:3000,  
-    prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-    nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
-});
-$('.slider-section-5').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    fade: true,  
-    autoplay:true,
-    speed:3000,  
-    prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-    nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
-});
 
 
-$('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    speed:3000,  
-    fade: true,
-    asNavFor: '.slider-nav'
-});
-$('.slider-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: false,
-    speed:3000,  
-    centerMode: false,
-    focusOnSelect: true,
-    arrows: true,
-    prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-    nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
-    responsive: [
-       
-        {
-          breakpoint: 992,
-          settings: {
-            dots: false,
-            arrows:false
-          }
-        }
-      ]
-});
+function initSlider() {
+
+    $('.slider-section-1').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        autoplay: true,
+        speed: 3000,
+        prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+    });
+    $('.slider-section-5').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        autoplay: true,
+        speed: 3000,
+        prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+    });
+
+
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        speed: 3000,
+        fade: true,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        speed: 3000,
+        centerMode: false,
+        focusOnSelect: true,
+        arrows: true,
+        prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+        responsive: [
+
+            {
+                breakpoint: 992,
+                settings: {
+                    dots: false,
+                    arrows: false
+                }
+            }
+        ]
+    });
+
+}
 
 $(".popup img").click(function () {
     var $src = $(this).attr("src");
