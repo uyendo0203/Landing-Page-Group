@@ -1,0 +1,377 @@
+@font-face {
+  font-family: 'HelveticaNeueLight';
+  src: url("../assets/fonts/HelveticaNeueLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HelveticaNeueMedium';
+  src: url("../assets/fonts/HelveticaNeueMedium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HelveticaNeueBoldItalic';
+  src: url("../assets/fonts/HelveticaNeueBoldItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica-Neu-Bold';
+  src: url("../assets/fonts/Helvetica Neu Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica-Regular';
+  src: url("../assets/fonts/helveticaneue.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.contain-global {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 100%; }
+  @media (min-width: 768px) {
+    .contain-global {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .contain-global {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .contain-global {
+      width: 1170px; } }
+  @media (min-width: 1920px) {
+    .contain-global {
+      width: 1320px; } }
+
+@media (max-width: 768px) {
+  .pc {
+    display: none; } }
+
+.mobile {
+  display: none; }
+  @media (max-width: 768px) {
+    .mobile {
+      display: block; } }
+
+body,
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  position: relative; }
+
+.font-HelveticaNeueMedium {
+  font-family: 'HelveticaNeueMedium'; }
+
+.font-HelveticaNeueLight {
+  font-family: 'HelveticaNeueLight'; }
+
+.font-Helvetica-Neu-Bold {
+  font-family: 'Helvetica-Neu-Bold'; }
+
+.font-Helvetica-Regular {
+  font-family: 'Helvetica-Regular'; }
+
+.do_amway .section1 {
+  margin-top: 90px; }
+  @media only screen and (max-width: 768px) {
+    .do_amway .section1 {
+      margin-top: 60px; } }
+  .do_amway .section1 .head {
+    text-align: center;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media only screen and (max-width: 1023px) {
+      .do_amway .section1 .head {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    .do_amway .section1 .head .title {
+      font-weight: bold;
+      font-size: 50px;
+      color: #223351; }
+    .do_amway .section1 .head .descripxion {
+      font-size: 16px;
+      color: #223351; }
+    .do_amway .section1 .head .link {
+      font-family: 'HelveticaNeueMedium';
+      font-size: 16px;
+      color: #ec1850;
+      text-decoration: underline; }
+  .do_amway .section1 .slider-1 {
+    margin-top: 30px;
+    /* the parent */ }
+    .do_amway .section1 .slider-1 .item {
+      cursor: pointer; }
+      .do_amway .section1 .slider-1 .item img {
+        width: 100%; }
+    .do_amway .section1 .slider-1 .slick-slide {
+      margin: 0 15px; }
+    .do_amway .section1 .slider-1 .slick-list {
+      margin: 0 -150px; }
+
+.do_amway .section2 {
+  margin-top: 150px; }
+  @media only screen and (max-width: 768px) {
+    .do_amway .section2 {
+      margin-top: 120px; } }
+  .do_amway .section2 .head {
+    text-align: center;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media only screen and (max-width: 1023px) {
+      .do_amway .section2 .head {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    .do_amway .section2 .head .title {
+      font-weight: bold;
+      font-size: 50px;
+      color: #223351; }
+    .do_amway .section2 .head .descripxion {
+      font-size: 16px;
+      color: #223351; }
+    .do_amway .section2 .head .link {
+      font-family: 'HelveticaNeueMedium';
+      font-size: 16px;
+      color: #ec1850;
+      text-decoration: underline; }
+  .do_amway .section2 .contain {
+    margin-top: 50px; }
+    .do_amway .section2 .contain .item {
+      padding: 30px 20px;
+      -webkit-box-shadow: 0px 11px 26px 4px #d9d9d9;
+      -moz-box-shadow: 0px 11px 26px 4px #d9d9d9;
+      box-shadow: 0px 11px 26px 4px #d9d9d9; }
+      @media only screen and (max-width: 992px) {
+        .do_amway .section2 .contain .item {
+          margin-bottom: 20px; } }
+      .do_amway .section2 .contain .item .icon {
+        text-align: center;
+        margin-bottom: 22px;
+        max-width: 90px;
+        margin-left: auto;
+        margin-right: auto; }
+        .do_amway .section2 .contain .item .icon img {
+          width: 100%; }
+      .do_amway .section2 .contain .item .title {
+        font-size: 22px;
+        color: #223351;
+        margin-bottom: 30px;
+        font-weight: bold; }
+      .do_amway .section2 .contain .item .text {
+        font-size: 16px;
+        color: #223351;
+        font-family: 'HelveticaNeueLight'; }
+      .do_amway .section2 .contain .item-1 .icon {
+        max-width: 55px; }
+      .do_amway .section2 .contain .item-2 .icon {
+        max-width: 93px; }
+      .do_amway .section2 .contain .item-3 .icon {
+        max-width: 88px; }
+      .do_amway .section2 .contain .item-4 .icon {
+        max-width: 53px; }
+
+.do_amway .section3 {
+  margin-top: 125px;
+  background-color: #008fc5;
+  padding-top: 55px;
+  padding-bottom: 77px;
+  color: #fff; }
+  .do_amway .section3 .contain .item-1 {
+    transform: translateY(20%); }
+    @media only screen and (max-width: 992px) {
+      .do_amway .section3 .contain .item-1 {
+        transform: none; } }
+    .do_amway .section3 .contain .item-1 table {
+      max-width: 450px; }
+      @media only screen and (max-width: 992px) {
+        .do_amway .section3 .contain .item-1 table {
+          margin-left: auto;
+          margin-right: auto; } }
+    .do_amway .section3 .contain .item-1 .col-1, .do_amway .section3 .contain .item-1 .col-3, .do_amway .section3 .contain .item-1 .col-5 {
+      font-weight: bold;
+      padding: 0 10px;
+      width: 30%; }
+      .do_amway .section3 .contain .item-1 .col-1 span, .do_amway .section3 .contain .item-1 .col-3 span, .do_amway .section3 .contain .item-1 .col-5 span {
+        display: block;
+        text-align: center; }
+        .do_amway .section3 .contain .item-1 .col-1 span:nth-child(1), .do_amway .section3 .contain .item-1 .col-3 span:nth-child(1), .do_amway .section3 .contain .item-1 .col-5 span:nth-child(1) {
+          font-size: 60px; }
+          @media only screen and (max-width: 500px) {
+            .do_amway .section3 .contain .item-1 .col-1 span:nth-child(1), .do_amway .section3 .contain .item-1 .col-3 span:nth-child(1), .do_amway .section3 .contain .item-1 .col-5 span:nth-child(1) {
+              font-size: 40px; } }
+        .do_amway .section3 .contain .item-1 .col-1 span:nth-child(2), .do_amway .section3 .contain .item-1 .col-3 span:nth-child(2), .do_amway .section3 .contain .item-1 .col-5 span:nth-child(2) {
+          font-size: 22px;
+          text-transform: uppercase; }
+          @media only screen and (max-width: 500px) {
+            .do_amway .section3 .contain .item-1 .col-1 span:nth-child(2), .do_amway .section3 .contain .item-1 .col-3 span:nth-child(2), .do_amway .section3 .contain .item-1 .col-5 span:nth-child(2) {
+              font-size: 12px; } }
+      @media only screen and (max-width: 500px) {
+        .do_amway .section3 .contain .item-1 .col-1, .do_amway .section3 .contain .item-1 .col-3, .do_amway .section3 .contain .item-1 .col-5 {
+          padding: 0; } }
+    .do_amway .section3 .contain .item-1 .col-2, .do_amway .section3 .contain .item-1 .col-4 {
+      padding: 0 10px;
+      font-family: 'HelveticaNeueLight';
+      font-size: 23px;
+      width: 20%; }
+      @media only screen and (max-width: 500px) {
+        .do_amway .section3 .contain .item-1 .col-2, .do_amway .section3 .contain .item-1 .col-4 {
+          font-size: 12px; } }
+  @media only screen and (max-width: 992px) {
+    .do_amway .section3 .contain .item-2 {
+      text-align: center;
+      margin-top: 30px; } }
+  .do_amway .section3 .contain .item-2 .title {
+    font-size: 50px;
+    font-weight: bold; }
+  .do_amway .section3 .contain .item-2 .text {
+    font-size: 22px;
+    margin-bottom: 30px; }
+  .do_amway .section3 .contain .item-2 .link-search-job {
+    background-color: #ffd100;
+    padding: 12px 30px;
+    border-radius: 3px;
+    color: #000;
+    display: inline-block;
+    font-size: 22px; }
+
+.do_amway .section4 {
+  position: relative;
+  background-image: url("../assets/images/section4.jpg");
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .do_amway .section4 .contain form {
+    max-width: 550px;
+    width: 100%; }
+    @media only screen and (max-width: 992px) {
+      .do_amway .section4 .contain form {
+        max-width: 100%; } }
+    .do_amway .section4 .contain form .title {
+      font-size: 40px;
+      color: #fff;
+      margin-bottom: 30px;
+      font-weight: bold; }
+    .do_amway .section4 .contain form .form-group {
+      margin-bottom: 25px; }
+    .do_amway .section4 .contain form .form-control {
+      background-color: #e9e7e5;
+      border-radius: 0;
+      padding-left: 24px;
+      border: none;
+      font-family: 'HelveticaNeueLight';
+      font-size: 22px;
+      outline: none; }
+      .do_amway .section4 .contain form .form-control::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #000;
+        opacity: 0.6;
+        font-style: italic;
+        font-size: 22px;
+        font-family: 'HelveticaNeueLight'; }
+      .do_amway .section4 .contain form .form-control::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #000;
+        opacity: 0.6;
+        font-style: italic;
+        font-size: 22px;
+        font-family: 'HelveticaNeueLight'; }
+      .do_amway .section4 .contain form .form-control:-ms-input-placeholder {
+        /* IE 10+ */
+        color: #000;
+        opacity: 0.6;
+        font-style: italic;
+        font-size: 22px;
+        font-family: 'HelveticaNeueLight'; }
+      .do_amway .section4 .contain form .form-control:-moz-placeholder {
+        /* Firefox 18- */
+        color: #000;
+        opacity: 0.6;
+        font-style: italic;
+        font-size: 22px;
+        font-family: 'HelveticaNeueLight'; }
+    .do_amway .section4 .contain form input {
+      height: 55px; }
+    .do_amway .section4 .contain form textarea {
+      height: 165px;
+      resize: none; }
+    .do_amway .section4 .contain form .btn-submit {
+      background-color: #ffd100;
+      height: 47px;
+      width: 180px;
+      line-height: normal;
+      border-radius: 3px;
+      color: #000;
+      display: inline-block;
+      font-size: 22px;
+      border: 1px solid #ffd100;
+      margin-top: 15px; }
+      .do_amway .section4 .contain form .btn-submit:hover {
+        text-decoration: underline; }
+
+.do_amway .section5 {
+  background-color: #223351;
+  background-image: url("../assets/images/footer.jpg");
+  background-size: cover;
+  color: #fefeff; }
+  .do_amway .section5 .top {
+    margin-bottom: 35px; }
+  .do_amway .section5 .logo {
+    max-width: 200px;
+    display: inline-block;
+    margin-right: 33px; }
+    @media only screen and (max-width: 992px) {
+      .do_amway .section5 .logo {
+        display: block;
+        margin-bottom: 20px; } }
+    .do_amway .section5 .logo img {
+      width: 100%; }
+  .do_amway .section5 .address {
+    font-family: 'HelveticaNeueLight'; }
+  .do_amway .section5 .social-icon {
+    display: inline-block;
+    background-color: #333;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    margin: 0 7px; }
+    .do_amway .section5 .social-icon:hover .fa {
+      color: #ffd100; }
+    .do_amway .section5 .social-icon .fa {
+      font-size: 18px;
+      vertical-align: middle; }
+  .do_amway .section5 .item-top {
+    padding-top: 65px; }
+  .do_amway .section5 .item {
+    padding-top: 95px; }
+    @media only screen and (max-width: 992px) {
+      .do_amway .section5 .item {
+        padding-top: 50px; } }
+    @media only screen and (max-width: 768px) {
+      .do_amway .section5 .item {
+        padding-top: 45px; } }
+    .do_amway .section5 .item .title {
+      font-weight: bold;
+      font-size: 22px;
+      margin-bottom: 35px; }
+    .do_amway .section5 .item ul {
+      list-style: none;
+      padding-left: 0; }
+      .do_amway .section5 .item ul a {
+        font-family: 'HelveticaNeueLight';
+        color: #fefeff; }
+  .do_amway .section5 .design-by {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #fefeff;
+    font-family: 'HelveticaNeueLight'; }
+
+/*# sourceMappingURL=main.bundle.css.map*/
