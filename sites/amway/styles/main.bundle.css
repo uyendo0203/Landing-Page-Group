@@ -64,16 +64,16 @@ html {
   position: relative; }
 
 .font-HelveticaNeueMedium {
-  font-family: 'HelveticaNeueMedium'; }
+  font-family: "HelveticaNeueMedium"; }
 
 .font-HelveticaNeueLight {
-  font-family: 'HelveticaNeueLight'; }
+  font-family: "HelveticaNeueLight"; }
 
 .font-Helvetica-Neu-Bold {
-  font-family: 'Helvetica-Neu-Bold'; }
+  font-family: "Helvetica-Neu-Bold"; }
 
 .font-Helvetica-Regular {
-  font-family: 'Helvetica-Regular'; }
+  font-family: "Helvetica-Regular"; }
 
 .do_amway .section1 {
   margin-top: 90px; }
@@ -97,7 +97,7 @@ html {
       font-size: 16px;
       color: #223351; }
     .do_amway .section1 .head .link {
-      font-family: 'HelveticaNeueMedium';
+      font-family: "HelveticaNeueMedium";
       font-size: 16px;
       color: #ec1850;
       text-decoration: underline; }
@@ -135,7 +135,7 @@ html {
       font-size: 16px;
       color: #223351; }
     .do_amway .section2 .head .link {
-      font-family: 'HelveticaNeueMedium';
+      font-family: "HelveticaNeueMedium";
       font-size: 16px;
       color: #ec1850;
       text-decoration: underline; }
@@ -165,15 +165,7 @@ html {
       .do_amway .section2 .contain .item .text {
         font-size: 16px;
         color: #223351;
-        font-family: 'HelveticaNeueLight'; }
-      .do_amway .section2 .contain .item-1 .icon {
-        max-width: 55px; }
-      .do_amway .section2 .contain .item-2 .icon {
-        max-width: 93px; }
-      .do_amway .section2 .contain .item-3 .icon {
-        max-width: 88px; }
-      .do_amway .section2 .contain .item-4 .icon {
-        max-width: 53px; }
+        font-family: "HelveticaNeueLight"; }
 
 .do_amway .section3 {
   margin-top: 125px;
@@ -192,34 +184,50 @@ html {
         .do_amway .section3 .contain .item-1 table {
           margin-left: auto;
           margin-right: auto; } }
-    .do_amway .section3 .contain .item-1 .col-1, .do_amway .section3 .contain .item-1 .col-3, .do_amway .section3 .contain .item-1 .col-5 {
+    .do_amway .section3 .contain .item-1 .col-1,
+    .do_amway .section3 .contain .item-1 .col-3,
+    .do_amway .section3 .contain .item-1 .col-5 {
       font-weight: bold;
       padding: 0 10px;
       width: 30%; }
-      .do_amway .section3 .contain .item-1 .col-1 span, .do_amway .section3 .contain .item-1 .col-3 span, .do_amway .section3 .contain .item-1 .col-5 span {
+      .do_amway .section3 .contain .item-1 .col-1 span,
+      .do_amway .section3 .contain .item-1 .col-3 span,
+      .do_amway .section3 .contain .item-1 .col-5 span {
         display: block;
         text-align: center; }
-        .do_amway .section3 .contain .item-1 .col-1 span:nth-child(1), .do_amway .section3 .contain .item-1 .col-3 span:nth-child(1), .do_amway .section3 .contain .item-1 .col-5 span:nth-child(1) {
+        .do_amway .section3 .contain .item-1 .col-1 span:nth-child(1),
+        .do_amway .section3 .contain .item-1 .col-3 span:nth-child(1),
+        .do_amway .section3 .contain .item-1 .col-5 span:nth-child(1) {
           font-size: 60px; }
           @media only screen and (max-width: 500px) {
-            .do_amway .section3 .contain .item-1 .col-1 span:nth-child(1), .do_amway .section3 .contain .item-1 .col-3 span:nth-child(1), .do_amway .section3 .contain .item-1 .col-5 span:nth-child(1) {
+            .do_amway .section3 .contain .item-1 .col-1 span:nth-child(1),
+            .do_amway .section3 .contain .item-1 .col-3 span:nth-child(1),
+            .do_amway .section3 .contain .item-1 .col-5 span:nth-child(1) {
               font-size: 40px; } }
-        .do_amway .section3 .contain .item-1 .col-1 span:nth-child(2), .do_amway .section3 .contain .item-1 .col-3 span:nth-child(2), .do_amway .section3 .contain .item-1 .col-5 span:nth-child(2) {
+        .do_amway .section3 .contain .item-1 .col-1 span:nth-child(2),
+        .do_amway .section3 .contain .item-1 .col-3 span:nth-child(2),
+        .do_amway .section3 .contain .item-1 .col-5 span:nth-child(2) {
           font-size: 22px;
           text-transform: uppercase; }
           @media only screen and (max-width: 500px) {
-            .do_amway .section3 .contain .item-1 .col-1 span:nth-child(2), .do_amway .section3 .contain .item-1 .col-3 span:nth-child(2), .do_amway .section3 .contain .item-1 .col-5 span:nth-child(2) {
+            .do_amway .section3 .contain .item-1 .col-1 span:nth-child(2),
+            .do_amway .section3 .contain .item-1 .col-3 span:nth-child(2),
+            .do_amway .section3 .contain .item-1 .col-5 span:nth-child(2) {
               font-size: 12px; } }
       @media only screen and (max-width: 500px) {
-        .do_amway .section3 .contain .item-1 .col-1, .do_amway .section3 .contain .item-1 .col-3, .do_amway .section3 .contain .item-1 .col-5 {
+        .do_amway .section3 .contain .item-1 .col-1,
+        .do_amway .section3 .contain .item-1 .col-3,
+        .do_amway .section3 .contain .item-1 .col-5 {
           padding: 0; } }
-    .do_amway .section3 .contain .item-1 .col-2, .do_amway .section3 .contain .item-1 .col-4 {
+    .do_amway .section3 .contain .item-1 .col-2,
+    .do_amway .section3 .contain .item-1 .col-4 {
       padding: 0 10px;
-      font-family: 'HelveticaNeueLight';
+      font-family: "HelveticaNeueLight";
       font-size: 23px;
       width: 20%; }
       @media only screen and (max-width: 500px) {
-        .do_amway .section3 .contain .item-1 .col-2, .do_amway .section3 .contain .item-1 .col-4 {
+        .do_amway .section3 .contain .item-1 .col-2,
+        .do_amway .section3 .contain .item-1 .col-4 {
           font-size: 12px; } }
   @media only screen and (max-width: 992px) {
     .do_amway .section3 .contain .item-2 {
@@ -241,7 +249,7 @@ html {
 
 .do_amway .section4 {
   position: relative;
-  background-image: url("../assets/images/section4.jpg");
+  background-image: url("https://via.placeholder.com/1500x300/ffd100");
   background-size: cover;
   padding-top: 50px;
   padding-bottom: 50px; }
@@ -263,7 +271,7 @@ html {
       border-radius: 0;
       padding-left: 24px;
       border: none;
-      font-family: 'HelveticaNeueLight';
+      font-family: "HelveticaNeueLight";
       font-size: 22px;
       outline: none; }
       .do_amway .section4 .contain form .form-control::-webkit-input-placeholder {
@@ -272,28 +280,28 @@ html {
         opacity: 0.6;
         font-style: italic;
         font-size: 22px;
-        font-family: 'HelveticaNeueLight'; }
+        font-family: "HelveticaNeueLight"; }
       .do_amway .section4 .contain form .form-control::-moz-placeholder {
         /* Firefox 19+ */
         color: #000;
         opacity: 0.6;
         font-style: italic;
         font-size: 22px;
-        font-family: 'HelveticaNeueLight'; }
+        font-family: "HelveticaNeueLight"; }
       .do_amway .section4 .contain form .form-control:-ms-input-placeholder {
         /* IE 10+ */
         color: #000;
         opacity: 0.6;
         font-style: italic;
         font-size: 22px;
-        font-family: 'HelveticaNeueLight'; }
+        font-family: "HelveticaNeueLight"; }
       .do_amway .section4 .contain form .form-control:-moz-placeholder {
         /* Firefox 18- */
         color: #000;
         opacity: 0.6;
         font-style: italic;
         font-size: 22px;
-        font-family: 'HelveticaNeueLight'; }
+        font-family: "HelveticaNeueLight"; }
     .do_amway .section4 .contain form input {
       height: 55px; }
     .do_amway .section4 .contain form textarea {
@@ -331,7 +339,7 @@ html {
     .do_amway .section5 .logo img {
       width: 100%; }
   .do_amway .section5 .address {
-    font-family: 'HelveticaNeueLight'; }
+    font-family: "HelveticaNeueLight"; }
   .do_amway .section5 .social-icon {
     display: inline-block;
     background-color: #333;
@@ -365,13 +373,13 @@ html {
       list-style: none;
       padding-left: 0; }
       .do_amway .section5 .item ul a {
-        font-family: 'HelveticaNeueLight';
+        font-family: "HelveticaNeueLight";
         color: #fefeff; }
   .do_amway .section5 .design-by {
     margin-top: 50px;
     padding-bottom: 20px;
     text-align: center;
     color: #fefeff;
-    font-family: 'HelveticaNeueLight'; }
+    font-family: "HelveticaNeueLight"; }
 
 /*# sourceMappingURL=main.bundle.css.map*/

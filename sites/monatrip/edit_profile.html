@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <title>Monatrip</title>
+     </head>
+     <meta name="viewport" content="width=device-width">
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="">
+     <meta name="author" content="">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="HandheldFriendly" content="true">
+     <meta name="MobileOptimized" content="">
+     <meta name="keywords" content="" />
+     <meta name="description" content="">
+     <meta name="MobileOptimized" content="width" />
+     <meta name="HandheldFriendly" content="true" />
+     <meta name="robots" content="noindex" />
+     <meta name="geo.region" content="MM" />
+     <meta name="geo.position" content="21.916221;95.955974" />
+     <meta name="ICBM" content="21.916221, 95.955974" />
+     <meta property="og:title" content="" />
+     <meta property="og:type" content="" />
+     <meta property="og:url" content="" />
+     <meta property="og:image" content="" />
+     <meta property="og:image" content="" />
+     <meta property="og:image:secure_url" content="" />
+     <meta property="og:image:type" content="" />
+     <meta property="og:image:width" content="" />
+     <meta property="og:image:height" content="" />
+     <meta property="og:image:alt" content="" />
+     <meta name="twitter:card" content="">
+     <meta name="twitter:description" content="">
+     <meta name="twitter:title" content="">
+     <meta name="twitter:site" content="">
+     <meta name="twitter:image" content="">
+     <meta name="twitter:creator" content="">
+
+     <!--lib-->
+     <!-- fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap-theme.min.css">
+     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+
+     <!--font-awesome -->
+     <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+     <!-- style -->
+     <link rel="stylesheet" href="./styles/styles.css">
+
+     <!-- slick slider -->
+     <link rel="stylesheet" href="./lib/slick-1.8.0/slick-theme.css">
+     <link rel="stylesheet" href="./lib/slick-1.8.0/slick.css">
+     
+
+
+<body>
+    
+    <div class="mona_header">
+        <div class="left">
+            <a href="#" class="logo">
+                <img src="./images/logo.png" alt="">
+            </a>
+        </div>
+        <div class="menu-toggle-mobile">
+            <!-- <img class="" src="./images/btn-menu-mobile.png" alt=""> -->
+            <table>
+                <tr>
+                    <td style="padding-right:10px">
+                        <i style="font-size: 20px; margin-right: 10px;" class="fa fa-angle-down" aria-hidden="true"></i>
+                        <a style="font-size:20px; color:black">Minh</a>
+                        
+                    </td>
+                    <td>
+                        <div style="max-width:40px; height:40px; border:1px solid transparent; position:relative">
+                                <img style="width:100%; position:absolute;  border-radius:50%; top:0; left:0" src="./images/avatar.jpeg" alt="">
+                        </div>
+                        
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        <div class="menu-mobile">
+            
+            <ul class="login-success">
+                <li>
+                    <a href="add_trip.html">Add a trip</a>
+                </li>
+                <li>
+                    <a href="#">Explore</a>
+                </li>
+                <li>
+                    <a href="#">My Trips</a>
+                </li>
+                <li>
+                    <a href="#">Edit Profile</a>
+                </li>
+                <li>
+                    <a href="#">Contact us</a>
+                </li>
+                <li>
+                    <a href="#">Log out</a>
+                </li>
+            </ul>
+
+        </div>
+        
+        <div class="right">
+            <div class="action login-not-yet">
+                    <a href="#" class="sign-up" data-toggle="modal" data-target="#sign-up">Sign Up</a>
+                    <a href="#" class="login"  data-toggle="modal" data-target="#login">Login</a>
+            </div>
+            <div class="action login-successful">
+                    <a href="add_trip.html" class="add-trip">ADD A TRIP</a>
+                    <a href="#" class="explore">EXPLORE</a>
+                    <div class="user-login-success">
+                        <a class="avatar">
+                            <img src="./images/avatar.jpeg" alt="">
+                        </a>
+                        <a href="#" class="name">Minh</a>
+                    </div>
+                    <div class="menu-login-success">
+                        <ul>
+                            <li><a href="#">My Trips</a></li>
+                            <li><a href="#">Edit Profile</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#" class="logout">Log out</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="login-mobile-not-yet">
+        <ul>
+            <li>
+                <a href="#"  data-toggle="modal" data-target="#sign-up">Sign Up</a>
+            </li>
+            <li>
+                <a href="#" data-toggle="modal" data-target="#login">Login</a>
+            </li>
+        </ul>
+     </div>
+     
+     <!-- check  -->
+     <div class="data-exist" data-exist = '1'></div>
+
+
+    <div class="mona_edit_profile">
+        <div class="col_left">
+            <div class="contain_avatar">
+                <img src="./images/avatar.jpeg" alt="">
+            </div>
+            <label class="button_upload font-medium" for="upload">
+                <input type="file" id="upload"> Upload
+            </label>
+        </div>
+        <div class="col_right">
+            <div class="contain">
+                <form>
+                    <div class="form-group font-medium item">
+                        <label>First name</label>
+                        <input type="text">
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="form-group font-medium item">
+                        <label>Last name</label>
+                        <input type="text">
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="form-group font-medium item">
+                        <label>Email address</label>
+                        <input type="text">
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="form-group font-medium item">
+                        <label>Contact number</label>
+                        <input type="text">
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="form-group font-medium item">
+                        <label>Home city</label>
+                        <input type="text">
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="form-group font-medium item">
+                        <label>About you</label>
+                        <textarea type="text"></textarea>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="form-group font-medium item">
+                        <label>Facebook link</label>
+                        <input type="text">
+                        <div class="clearfix"></div>
+                    </div>
+                </form>
+            </div>
+            
+            <button class="mona_edit_profile_btn_save_change">Save Change</button>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="mona_footer">
+        <div class="container-fluid">
+            <div class="mona_footer_content">
+                <div class="row">
+                    <div class="col-1">
+                        <ul>
+                            <li class="font-medium">
+                                <a>monatrip</a>
+                            </li>
+                            <li class="child">
+                                <a href="#">
+                                        About Us
+                                </a>
+                            </li>
+                            <li class="child">
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li class="child">
+                                <a href="#">Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <ul>
+                            <li class="font-medium">
+                                <a>Travel Together</a>
+                            </li>
+                            <li class="child">
+                                <a href="#">
+                                        About Us
+                                </a>
+                            </li>
+                            <li class="child">
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li class="child">
+                                <a href="#">Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li class="font-medium">
+                                <a >Share your trip experience</a>
+                            </li>
+                            <li class="child">
+                                <a href="#">
+                                        About Us
+                                </a>
+                            </li>
+                            <li class="child">
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li class="child">
+                                <a href="#">Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="mona-name font-medium">
+                montrip company - 2018
+        </div>
+    </div>
+<!-- ===================================================================================================== -->
+<!-- Modal login-->
+  <div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+            <div class="modal-mona">
+                <div class="login-title">
+                    <h1 class="title font-medium">Log in</h1>
+                    <div class="close-icon"  data-dismiss="modal">
+                        <img src="./images/close.png" alt="">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="login-form">
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Email Address"/>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Password"/>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn-login font-medium">
+                                Log in
+                        </button>
+                    </div>
+                    <a href="#" class="forgot-pwd" data-toggle="modal" data-target="#forgot-pwd">Forgot password?</a>
+                </div>
+                <p class="text-or">Or</p>
+                <div class="social">
+                    <a class="fb">
+                        <img src="./images/fb.png" alt="">
+                    </a>
+                    <a class="gg">
+                        <img src="./images/gg.png" alt="">
+                    </a>
+                </div>
+                <hr class="login-line">
+                <p class="dont-have-acc">
+                    <a href="#" class="text font-medium">Don’t have an account? </a>
+                    <a href="#" class="sign-up font-medium" data-toggle="modal" data-target="#sign-up">Sign up</a>
+                </p>
+            </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+<!-- Modal sign up-->
+  <div class="modal fade" id="sign-up" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+            <div class="modal-mona">
+                <div class="sign-up-title">
+                    <h1 class="title font-medium">Sign Up</h1>
+                    <div class="close-icon"  data-dismiss="modal">
+                        <img src="./images/close.png" alt="">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            
+                <div class="sign-up-form">
+                    <div class="social fb" data-toggle="modal" data-target="#sign-up-gg-fb">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <a href="#" class="text font-medium" >Sign up with Facebook</a>
+                    </div>
+                    <div class="social gg" data-toggle="modal" data-target="#sign-up-gg-fb">
+                        <img src="./images/gg-color.png" alt="">
+                        <a href="#" class="text font-medium">Sign up with Google</a>
+                    </div>
+                </div>
+                <p class="text-or">Or</p>
+                <a href="#" class="sign-up-email font-medium">Sign up with Email</a>
+
+                <hr class="login-line">
+                <p class="dont-have-acc">
+                    <a href="#" class="text font-medium">Already a member? </a>
+                    <a href="#" class="login font-medium" data-toggle="modal" data-target="#login"> Login</a>
+                </p>
+            </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Modal reset pwd-->
+  <div class="modal fade" id="forgot-pwd" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+            <div class="modal-mona">
+                <div class="forgot-title">
+                    <h1 class="title font-medium">Reset password</h1>
+                    <div class="close-icon"  data-dismiss="modal">
+                        <img src="./images/close.png" alt="">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <p class="forgot-text">Enter the email address associated with your account, and we’ll email you a link to reset your password.</p>
+                <div class="forgot-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email Address">
+                    </div>
+                </div>
+                <a href="#" class="send-reset-link font-medium">Send Reset Link</a>
+                <a href="#" class="back-to-login" data-toggle="modal" data-target="#login">Back to login</a>
+            </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+<!-- Modal sign up with gg or fb-->
+  <div class="modal fade" id="sign-up-gg-fb" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+            <div class="modal-mona">
+                <p class="title">
+                    Sign up with Facebook 
+                    <a href="#">Facebook</a>
+                    or 
+                    <a href="#">Google</a>
+                </p>
+                <a class="sclose-icon"  data-dismiss="modal"><img src="./images/close.png" alt=""></a>
+                <p class="text-or">Or</p>
+                <div class="sign-up-gg-fb-form">
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Email address">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="First name">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Last name">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Your contact number">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn-signup-fb-gg font-medium">
+                                Sign up
+                        </button>
+                    </div>
+                </div>
+                <p class="terms">By clicking Sign up, you agree to our <a href="#">Terms</a></p>
+                <hr class="sign-up-gg-fb-line">
+                <p class="sign-up-gg-fb-login font-medium">Already a member? <a href="#" data-toggle="modal" data-target="#login">Log in</a> </p>
+            </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+
+
+<!-- jquery -->
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./lib/slick-1.8.0/slick.min.js"></script>
+
+
+<script type="text/javascript" src="./lib/bootstrap-daterangepicker-master/moment.min.js"></script>
+<script type="text/javascript" src="./lib/bootstrap-daterangepicker-master/daterangepicker.js"></script>
+<link rel="stylesheet" type="text/css" href="./lib/bootstrap-daterangepicker-master/daterangepicker.css" />
+<!-- js custom -->
+<script src="./scripts/main.js"></script>
+
+
+
+</body>
+</html>
